@@ -14,6 +14,7 @@ import math
 import os
 from pathlib import Path
 import platform
+import shutil
 import time
 
 import numpy as np
@@ -282,10 +283,22 @@ def expert_evaluation(cfg):
 
 def run(cfg):
     out=Path('outputs');out.mkdir(exist_ok=True)
+    cache=Path(cfg['result_cache']) if cfg.get('result_cache') else None
+    resume=cache if cache is not None and (cache/'geometry-results.json').exists() else Path(cfg.get('resume_from','/nonexistent'))
+    if (resume/'geometry-results.json').exists():
+        operational={'resume_from','result_cache','max_models_per_run'}
+        for path in resume.glob('policy-*.pt'):
+            saved=torch.load(path,map_location='cpu',weights_only=False)
+            assert all(saved['config'].get(k)==v for k,v in cfg.items() if k not in operational), 'resume configuration mismatch'
+        for path in resume.iterdir():
+            if path.is_file():shutil.copy2(path,out/path.name)
+        emit('geometry_resume',source=str(resume),files=len(list(out.iterdir())),
+             results_sha256=sha(out/'geometry-results.json'))
     torch.set_num_threads(cfg.get('cpu_threads',4))
     device=torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
     versions={k:importlib.metadata.version(k) for k in ['torch','numpy','ogbench','mujoco','safetensors','transformers']}
-    metadata={'config':cfg,'run_id':os.environ.get('ORX_RUN_ID'),'commit':os.environ.get('ORX_COMMIT'),
+    run_id=os.environ.get('ORX_RUN_ID') or Path.cwd().parent.name
+    metadata={'config':cfg,'run_id':run_id,'commit':os.environ.get('ORX_COMMIT'),
               'device':str(device),'versions':versions,'python':platform.python_version()}
     emit('geometry_configuration',**metadata)
     arrays,data_meta=collect(cfg)
@@ -301,9 +314,18 @@ def run(cfg):
         state,weight_meta=load_layer(cfg['cache_root'])
         emit('pretrained_weights',**weight_meta)
         weight_meta['native_equivalence']=verify_native(state,weight_meta,device)
-    results=[];all_rows=[];all_curves=[]
+    results=json.loads((out/'geometry-results.json').read_text()) if (out/'geometry-results.json').exists() else []
+    all_rows=json.loads((out/'geometry-episodes.json').read_text()) if (out/'geometry-episodes.json').exists() else []
+    all_curves=json.loads((out/'learning-curves.json').read_text()) if (out/'learning-curves.json').exists() else []
+    for r in results:
+        if not r.get('source_run'):r['source_run']='ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d'
+    completed={(r['mode'],r['training_seed']) for r in results
+               if sum(s['mode']==r['mode'] and s['training_seed']==r['training_seed'] for s in results)==2}
+    models_this_run=0
     for seed in cfg['training_seeds']:
         for mode in cfg['modes']:
+            if (mode,seed) in completed:continue
+            if models_this_run>=cfg.get('max_models_per_run',100000):break
             torch.manual_seed(seed);np.random.seed(seed)
             began=time.monotonic()
             model=MLP(21) if mode=='mlp' else FrozenPolicy(21,state,mode,seed,torch.bfloat16)
@@ -357,6 +379,7 @@ def run(cfg):
                 rows=evaluate(model,mean,std,device,cfg,start,cfg['test_episodes'],condition,tag)
                 k=sum(r['success'] for r in rows);n=len(rows)
                 result={'mode':mode,'training_seed':seed,'condition':condition,'successes':k,'n':n,
+                        'source_run':run_id,
                         'success_rate':k/n,'wilson95':wilson(k,n),'mean_steps':float(np.mean([r['steps'] for r in rows])),
                         'mean_goal_error_m':float(np.mean([r['goal_error_m'] for r in rows]))}
                 per_condition.append(result);emit('policy_evaluation',**result)
@@ -367,6 +390,11 @@ def run(cfg):
             (out/'geometry-results.json').write_text(json.dumps(results,indent=2))
             (out/'geometry-episodes.json').write_text(json.dumps(all_rows,indent=2))
             (out/'learning-curves.json').write_text(json.dumps(all_curves,indent=2))
+            models_this_run+=1
+            if cache is not None:
+                cache.mkdir(parents=True,exist_ok=True)
+                for path in out.iterdir():
+                    if path.is_file():shutil.copy2(path,cache/path.name)
             del model,opt,best,trainable;gc.collect()
             if device.type=='mps':torch.mps.empty_cache()
     hashes={}
@@ -375,5 +403,6 @@ def run(cfg):
         if key in hashes:assert hashes[key]==r['initial_hash'],'unpaired physical state'
         hashes[key]=r['initial_hash']
     summary={**metadata,'dataset':data_meta,'weights':weight_meta,'results':results,'expert_controls':experts,
+             'complete':len(results)==2*len(cfg['training_seeds'])*len(cfg['modes']),
              'checks':{'disjoint_episode_splits':True,'paired_eval_states':True,'frozen_excluded_from_optimizer':True}}
     (out/'geometry-summary.json').write_text(json.dumps(summary,indent=2));emit('geometry_summary',**summary)

@@ -39,5 +39,8 @@
   "expert_test_episodes": 20,
   "eval_parallel": 8,
   "eval_horizon": 150,
-  "cpu_threads": 4
+  "cpu_threads": 4,
+  "resume_from": "/Users/aravindkannappan/.local/share/openresearch/local-runs/ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d/repo/outputs",
+  "result_cache": "/Users/aravindkannappan/.local/share/openresearch/geometry-control-cache/results/low-data-e77752e",
+  "max_models_per_run": 3
 }

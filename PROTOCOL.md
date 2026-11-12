@@ -60,3 +60,12 @@ every episode outcome, and summary. Verify repeated baseline runs agree and
 every paired condition starts from the same initial state. Use finite-value and
 action-bound assertions. Preserve traces for selected seeds. Do not tune on the
 held-out test results. Keep failed runs and unexpected results visible.
+
+## Follow-up: false freshness (declared after the first fault study)
+The first study established recovery by both refresh methods, with fewer calls
+from the age trigger. This follow-up tests a dependency: whether the publisher's
+timestamp can be trusted. Keep the object pose stale after step 10, but stamp it
+as current at every step. Explicit refresh remains functional. Compare the same
+four methods on 30 new reset seeds (200-229), with no policy retuning. Predict that
+the age trigger makes no refreshes and fails, while periodic polling succeeds.
+This is an engineered fault, not evidence of its real-world prevalence.

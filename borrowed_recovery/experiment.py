@@ -76,9 +76,12 @@ def rollout(env, cfg, seed, fault, method, trace=False):
 
     for step in range(cfg["max_steps"]):
         fault_active = step >= cfg["fault_start"]
-        publisher_failed = fault_active and fault in {"shared_stale", "shared_blind"}
+        publisher_failed = fault_active and fault in {"shared_stale", "shared_blind", "forged_fresh"}
         if not publisher_failed:
             cache = copy.deepcopy(info)
+            stamp = step
+        elif fault == "forged_fresh":
+            # Cached content remains unchanged but its source incorrectly claims a new timestamp.
             stamp = step
         age = step - stamp
 

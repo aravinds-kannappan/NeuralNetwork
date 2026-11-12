@@ -1,0 +1,23 @@
+{
+  "checked_on": "2026-11-11",
+  "browser": "installed Google Chrome, headless Playwright",
+  "viewports": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "local_file_and_anchor_links": "pass",
+  "document_horizontal_overflow": "none",
+  "replay_fault_method_combinations_checked": 20,
+  "playback_and_slider": "pass",
+  "false_timestamp_readout_and_outcomes": "pass",
+  "chart_data_rendering": "pass",
+  "phone_category_label_separation": "pass",
+  "browser_javascript_errors": [],
+  "scientific_evidence": "These are report-interface checks, not additional robot trials."
+}

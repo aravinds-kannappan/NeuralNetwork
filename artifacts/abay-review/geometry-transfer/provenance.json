@@ -1,0 +1,66 @@
+{
+  "status": "stopped_at_user_request",
+  "planned_training_seeds": [
+    42,
+    1337,
+    2024
+  ],
+  "complete_comparison_seeds": [
+    42
+  ],
+  "additional_pretrained_seeds": [
+    1337
+  ],
+  "completed_learned_policy_rollouts": 600,
+  "runs": [
+    {
+      "id": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d",
+      "commit": "e77752e1eb36dcf625d13d876d3ea26340f2f54c",
+      "status": "terminated after three completed models"
+    },
+    {
+      "id": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c",
+      "commit": "55c942f",
+      "status": "cancelled at user request after two more completed models"
+    },
+    {
+      "id": "b9238468-c01d-4d1f-a879-2ea48577baa8",
+      "commit": "2b400eaf0edec9ddf10c4f0675b56e5e82369569",
+      "status": "completed 256-demonstration feasibility baseline"
+    }
+  ],
+  "not_run": [
+    "interface exchange",
+    "paired-state alignment",
+    "encoder/decoder component swaps",
+    "multi-arm coordination",
+    "learned expert routing",
+    "recursive self-improvement"
+  ],
+  "model": {
+    "repository": "google/gemma-4-31B",
+    "revision": "5bbc2fb1c1b2c611d06e3d9f23c170ba21659d89",
+    "layer": 26
+  },
+  "files": {
+    "data/learning-curves.json": "5fccc92f1630732928cce4a9ea5e563556947819e2211f582f2f12781b647902",
+    "data/geometry-results.json": "d74b43d76de72beb30f0a882c9aedb22d45db316b9612bab8b9372d812f6b68e",
+    "data/geometry-episodes.json": "ba116f4d66b93e6094fccd3d949c0dc5d9c6837ccdd545bb2a13ab0187467f3e",
+    "models/policy-random-s42.pt": "41f1e36fcc434a96cece0b72f2dd5e57f377ff5ccb6470a094d710b8c9726dfc",
+    "models/policy-scrambled-s42.pt": "6a5d9c3c50d4bc85d53ef0caa92eb76a008289bafdcc8d59c26795e6df9ea759",
+    "models/adapter-pretrained-s42-step0.pt": "0d9a03a12b2b2c6c5e14d387e3f56c2eada4f3aea9c0776a8a027d29c4a89864",
+    "models/policy-pretrained-s1337.pt": "b7e2a48893eb2f40399b68d4ae31171e1a3c80ea5041bf20b8e8d84d9f679310",
+    "models/policy-pretrained-s42.pt": "87d15c83be0c4415759283a67894e295fb49e47e0b081e0cf69bb5c18a4e39e8",
+    "models/policy-mlp-s42.pt": "a16f63cc58a4dd57b9a39802af02ec1e9d929eba29e6c573c6c9f4d7feb4610e",
+    "source/GEOMETRY_PROTOCOL.md": "46234b8ea8a087a5813c56603d0767bb6e081deb1c08a49749a16eb1cecaf7e6",
+    "source/uv.lock": "32cf7746fdf52488c4d09544499a20db792e629a56e350835bd83d697d67aa6c",
+    "source/config.json": "1bcb99fc7896e937cef1a8c7ec2f53c96eef632c5d6c15b9bd10828bd0476f10",
+    "source/pyproject.toml": "a315799ecd96165a7c0b0877f2d30bce2c044efb9cb6a85e9466c9bf3b67a0fe",
+    "source/interface_exchange_NOT_RUN.py": "0fa21dcd51618d826251a2545cb2d76bbc51b350cdfa83345fe6e64e0891704d",
+    "source/.python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+    "source/borrowed_recovery/gemma_weights.py": "6a3ca841c2c47fd11b035229b34d9784c096c3a446a178a9be186a3b8702c786",
+    "source/borrowed_recovery/__init__.py": "5686198a7cb10d13f3bcbd04b51268a3eeef93cb5627f24c94b3005b72f7b0fc",
+    "source/borrowed_recovery/experiment.py": "b8015daba8bc172d1e12edfb13bc049c13a2dc6517ec3bbbbad72f654d49eb52",
+    "source/borrowed_recovery/geometry.py": "957bd362792709ce84d69d186deeabaab7929822d24b30816a3a611cf29a0cc1"
+  }
+}

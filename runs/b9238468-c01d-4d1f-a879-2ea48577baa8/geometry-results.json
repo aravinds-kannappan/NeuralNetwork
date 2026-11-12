@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "mlp",
+    "training_seed": 42,
+    "condition": "id",
+    "successes": 39,
+    "n": 40,
+    "success_rate": 0.975,
+    "wilson95": [
+      0.8711863103652591,
+      0.9955731684973186
+    ],
+    "mean_steps": 47.15,
+    "mean_goal_error_m": 0.019727929516463655
+  },
+  {
+    "mode": "mlp",
+    "training_seed": 42,
+    "condition": "shift",
+    "successes": 39,
+    "n": 40,
+    "success_rate": 0.975,
+    "wilson95": [
+      0.8711863103652591,
+      0.9955731684973186
+    ],
+    "mean_steps": 47.875,
+    "mean_goal_error_m": 0.02330648813692204
+  }
+]

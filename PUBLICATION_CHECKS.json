@@ -1,0 +1,34 @@
+{
+  "html_links": [
+    {
+      "file": "index.html",
+      "links": 1
+    },
+    {
+      "file": "artifacts/abay-review/geometry-transfer/report.html",
+      "links": 54
+    },
+    {
+      "file": "artifacts/abay-review/geometry-transfer/report-first-edition.html",
+      "links": 22
+    },
+    {
+      "file": "artifacts/abay-review/robot-recovery/project.html",
+      "links": 30
+    },
+    {
+      "file": "artifacts/abay-review/robot-recovery/findings.html",
+      "links": 33
+    }
+  ],
+  "missing_local_links": [],
+  "original_provenance_hashes_verified": 19,
+  "walkthrough_identical_to_reviewed_artifact": true,
+  "scientific_config_unchanged": true,
+  "saved_demonstration_checksums": "pass",
+  "python_syntax": "pass",
+  "files_under_github_100_mib_limit": true,
+  "file_count": 160,
+  "total_bytes": 205037001,
+  "new_experiments": 0
+}

@@ -1,0 +1,103 @@
+[
+  {
+    "run_id": "cb4e3afe-c762-4531-8b42-23fcd4c0b48e",
+    "description": "initial setup failure",
+    "json_log_records": 0,
+    "saved_outputs": []
+  },
+  {
+    "run_id": "18e364e2-f0c9-4e07-9c35-ed2a7b355078",
+    "description": "constructor setup failure",
+    "json_log_records": 1,
+    "saved_outputs": []
+  },
+  {
+    "run_id": "dcdf3af0-76f9-45f2-bfc5-09ccf2ca1820",
+    "description": "scripted recovery baseline",
+    "json_log_records": 6,
+    "saved_outputs": [
+      "episodes.json",
+      "summary.json",
+      "traces.json"
+    ]
+  },
+  {
+    "run_id": "39f2f1ea-51df-4e9a-8db7-dd150a708280",
+    "description": "scripted paired fault controls",
+    "json_log_records": 482,
+    "saved_outputs": [
+      "episodes.json",
+      "summary.json",
+      "traces.json"
+    ]
+  },
+  {
+    "run_id": "db0ed781-2a03-44a5-95c2-cb5098a17073",
+    "description": "scripted false freshness test",
+    "json_log_records": 122,
+    "saved_outputs": [
+      "episodes.json",
+      "summary.json",
+      "traces.json"
+    ]
+  },
+  {
+    "run_id": "b9238468-c01d-4d1f-a879-2ea48577baa8",
+    "description": "learned 256-demonstration feasibility baseline",
+    "json_log_records": 31,
+    "saved_outputs": [
+      "geometry-episodes.json",
+      "geometry-results.json",
+      "geometry-summary.json",
+      "learning-curves.json",
+      "policy-mlp-s42.pt",
+      "trace-mlp-s42-id.json",
+      "trace-mlp-s42-shift.json"
+    ]
+  },
+  {
+    "run_id": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d",
+    "description": "interrupted frozen-layer comparison; three complete models",
+    "json_log_records": 115,
+    "saved_outputs": [],
+    "saved_outputs_copied_into_run": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c"
+  },
+  {
+    "run_id": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c",
+    "description": "resumable frozen-layer comparison; cancelled at user request",
+    "json_log_records": 55,
+    "saved_outputs": [
+      "adapter-pretrained-s1337-step0.pt",
+      "adapter-pretrained-s1337-step1000.pt",
+      "adapter-pretrained-s42-step0.pt",
+      "adapter-pretrained-s42-step1000.pt",
+      "adapter-random-s1337-step0.pt",
+      "adapter-random-s42-step0.pt",
+      "adapter-random-s42-step1000.pt",
+      "adapter-scrambled-s42-step0.pt",
+      "adapter-scrambled-s42-step1000.pt",
+      "fingerprints-pretrained-s1337.npz",
+      "fingerprints-pretrained-s42.npz",
+      "fingerprints-random-s42.npz",
+      "fingerprints-scrambled-s42.npz",
+      "geometry-episodes.json",
+      "geometry-results.json",
+      "learning-curves.json",
+      "policy-mlp-s42.pt",
+      "policy-pretrained-s1337.pt",
+      "policy-pretrained-s42.pt",
+      "policy-random-s42.pt",
+      "policy-scrambled-s42.pt",
+      "trace-mlp-s42-id.json",
+      "trace-mlp-s42-shift.json",
+      "trace-pretrained-s1337-id.json",
+      "trace-pretrained-s1337-shift.json",
+      "trace-pretrained-s42-id.json",
+      "trace-pretrained-s42-shift.json",
+      "trace-random-s42-id.json",
+      "trace-random-s42-shift.json",
+      "trace-scrambled-s42-id.json",
+      "trace-scrambled-s42-shift.json"
+    ]
+  }
+]

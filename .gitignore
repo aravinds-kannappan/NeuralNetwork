@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+outputs/
+.DS_Store
+
+# Machine-local downloads and build caches
+.cache/
+*.pyc
+.env
+.env.*
+!.env.example

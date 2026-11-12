@@ -1,0 +1,33 @@
+[
+  {
+    "model": "pretrained-s42",
+    "panel_states": 128,
+    "selected_step": 100,
+    "100": {
+      "raw_cosine_median": 0.9980196765565716,
+      "centered_cosine_median": 0.9979739597751802,
+      "centered_cosine_below_zero_fraction": 0.0,
+      "centered_cosine_below_half_fraction": 0.0,
+      "response_norm_ratio_median": 0.9983942357980424,
+      "response_norm_ratio_p10_p90": [
+        0.9509279032293297,
+        1.0483687343977972
+      ],
+      "eligible_neurons": 21504,
+      "total_neurons": 21504
+    },
+    "1000": {
+      "raw_cosine_median": 0.980865345327594,
+      "centered_cosine_median": 0.9805022742535662,
+      "centered_cosine_below_zero_fraction": 0.0,
+      "centered_cosine_below_half_fraction": 0.00018601190476190475,
+      "response_norm_ratio_median": 0.9612377405572741,
+      "response_norm_ratio_p10_p90": [
+        0.8130459834553342,
+        1.1153381676566887
+      ],
+      "eligible_neurons": 21504,
+      "total_neurons": 21504
+    }
+  }
+]

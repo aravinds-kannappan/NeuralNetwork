@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://arxiv.org/pdf/2605.00333v2",
+    "title": "Borrowed Geometry",
+    "role": "Full reference paper; linked instead of vendored",
+    "original_filename": "borrowed-geometry-v2.pdf",
+    "sha256": "86380f09456ed019fcd2be69e7ce0f4bc522222fa6b507645843cfe6d4965e36",
+    "bytes": 730375
+  },
+  {
+    "url": "https://arxiv.org/pdf/2606.25234",
+    "title": "Goodfire block sparse featurizers for vision",
+    "role": "Full reference paper; linked instead of vendored",
+    "original_filename": "bsf-vision.pdf",
+    "sha256": "e2531e0eb3d589b74853079bc9bef9a9d61ece2535b1062ac8f859e583033584",
+    "bytes": 50150094
+  },
+  {
+    "url": "https://arxiv.org/pdf/2610.23098",
+    "title": "InstAgent",
+    "role": "Full reference paper; linked instead of vendored",
+    "original_filename": "instagent.pdf",
+    "sha256": "64610623e1a72966e46e0c14fb1e117961c7a91737b574a2da2ed21d797b1f60",
+    "bytes": 3247398
+  },
+  {
+    "url": "https://raw.githubusercontent.com/abaybektursun/already-clean-audit/de979b861f26a4235e38d0a605952d8d94d6a8e9/studies/already-clean/walkthrough/neuron_across_training/data.js",
+    "title": "Abay neuron viewer data",
+    "role": "Upstream source dataset; fetch separately for the earlier source audit",
+    "original_filename": "neuron-data.js",
+    "sha256": "3df48c264043926b5da3813e2d76aa385004652535f51b20d474185fcf7a4b1a",
+    "bytes": 2666255
+  }
+]

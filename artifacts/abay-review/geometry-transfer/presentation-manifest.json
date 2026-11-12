@@ -1,0 +1,15 @@
+{
+  "change": "presentation and explanation only; no experiments launched",
+  "reference": "https://abaybektursun.github.io/already-clean-audit/#words",
+  "completed_policy_rollouts": 600,
+  "complete_comparison_training_seeds": [
+    42
+  ],
+  "inputs": {
+    "data/geometry-results.json": "d74b43d76de72beb30f0a882c9aedb22d45db316b9612bab8b9372d812f6b68e",
+    "data/geometry-episodes.json": "ba116f4d66b93e6094fccd3d949c0dc5d9c6837ccdd545bb2a13ab0187467f3e",
+    "neuron-audit.json": "af597bf99b1823d8132cf56c5cc42d607685975c7f29bac6a56ac0bb664303c1"
+  },
+  "html_bytes": 736375,
+  "builder": "build_walkthrough.py"
+}

@@ -1,0 +1,354 @@
+{
+  "config": {
+    "experiment_family": "geometry",
+    "phase": "learned_mlp_baseline",
+    "environment": "cube-double-play-singletask-task1-v0",
+    "cache_root": "/Users/aravindkannappan/.local/share/openresearch/geometry-control-cache",
+    "train_start": 1000,
+    "train_demos": 256,
+    "validation_start": 2000,
+    "validation_demos": 32,
+    "data_horizon": 150,
+    "demonstration_noise": 0.08,
+    "training_seeds": [
+      42
+    ],
+    "modes": [
+      "mlp"
+    ],
+    "train_steps": 2000,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "batch_size": 128,
+    "checkpoints": [
+      0,
+      100,
+      500,
+      1000,
+      1500,
+      2000
+    ],
+    "progress_interval": 250,
+    "test_start": 10000,
+    "shift_start": 20000,
+    "test_episodes": 40,
+    "expert_test_episodes": 20,
+    "eval_parallel": 8,
+    "eval_horizon": 150,
+    "cpu_threads": 4
+  },
+  "run_id": "b9238468-c01d-4d1f-a879-2ea48577baa8",
+  "commit": "2b400eaf0edec9ddf10c4f0675b56e5e82369569",
+  "device": "mps",
+  "versions": {
+    "torch": "2.15.0",
+    "numpy": "2.5.4",
+    "ogbench": "1.2.2",
+    "mujoco": "3.3.7",
+    "safetensors": "0.8.0"
+  },
+  "python": "3.12.13",
+  "dataset": {
+    "spec": {
+      "environment": "cube-double-play-singletask-task1-v0",
+      "train_start": 1000,
+      "train_demos": 256,
+      "validation_start": 2000,
+      "validation_demos": 32,
+      "data_horizon": 150,
+      "demonstration_noise": 0.08,
+      "features": "21_raw_state_fields_goal_jitter_v1"
+    },
+    "sha256": "d125c188dd4f99df3449b299fea07077ed07d9802c66b226f71aec29f25d0d24",
+    "stats": {
+      "train": {
+        "episodes": 256,
+        "successes": 256,
+        "transitions": 11088
+      },
+      "validation": {
+        "episodes": 32,
+        "successes": 32,
+        "transitions": 1345
+      }
+    }
+  },
+  "weights": null,
+  "results": [
+    {
+      "mode": "mlp",
+      "training_seed": 42,
+      "condition": "id",
+      "successes": 39,
+      "n": 40,
+      "success_rate": 0.975,
+      "wilson95": [
+        0.8711863103652591,
+        0.9955731684973186
+      ],
+      "mean_steps": 47.15,
+      "mean_goal_error_m": 0.019727929516463655
+    },
+    {
+      "mode": "mlp",
+      "training_seed": 42,
+      "condition": "shift",
+      "successes": 39,
+      "n": 40,
+      "success_rate": 0.975,
+      "wilson95": [
+        0.8711863103652591,
+        0.9955731684973186
+      ],
+      "mean_steps": 47.875,
+      "mean_goal_error_m": 0.02330648813692204
+    }
+  ],
+  "expert_controls": [
+    {
+      "condition": "id",
+      "seed": 10000,
+      "success": true,
+      "steps": 45
+    },
+    {
+      "condition": "id",
+      "seed": 10001,
+      "success": true,
+      "steps": 34
+    },
+    {
+      "condition": "id",
+      "seed": 10002,
+      "success": true,
+      "steps": 49
+    },
+    {
+      "condition": "id",
+      "seed": 10003,
+      "success": true,
+      "steps": 35
+    },
+    {
+      "condition": "id",
+      "seed": 10004,
+      "success": true,
+      "steps": 36
+    },
+    {
+      "condition": "id",
+      "seed": 10005,
+      "success": true,
+      "steps": 38
+    },
+    {
+      "condition": "id",
+      "seed": 10006,
+      "success": true,
+      "steps": 38
+    },
+    {
+      "condition": "id",
+      "seed": 10007,
+      "success": true,
+      "steps": 44
+    },
+    {
+      "condition": "id",
+      "seed": 10008,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "id",
+      "seed": 10009,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "id",
+      "seed": 10010,
+      "success": true,
+      "steps": 40
+    },
+    {
+      "condition": "id",
+      "seed": 10011,
+      "success": true,
+      "steps": 44
+    },
+    {
+      "condition": "id",
+      "seed": 10012,
+      "success": true,
+      "steps": 40
+    },
+    {
+      "condition": "id",
+      "seed": 10013,
+      "success": true,
+      "steps": 38
+    },
+    {
+      "condition": "id",
+      "seed": 10014,
+      "success": true,
+      "steps": 53
+    },
+    {
+      "condition": "id",
+      "seed": 10015,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "id",
+      "seed": 10016,
+      "success": true,
+      "steps": 50
+    },
+    {
+      "condition": "id",
+      "seed": 10017,
+      "success": true,
+      "steps": 35
+    },
+    {
+      "condition": "id",
+      "seed": 10018,
+      "success": true,
+      "steps": 52
+    },
+    {
+      "condition": "id",
+      "seed": 10019,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "shift",
+      "seed": 20000,
+      "success": true,
+      "steps": 38
+    },
+    {
+      "condition": "shift",
+      "seed": 20001,
+      "success": true,
+      "steps": 38
+    },
+    {
+      "condition": "shift",
+      "seed": 20002,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "shift",
+      "seed": 20003,
+      "success": true,
+      "steps": 36
+    },
+    {
+      "condition": "shift",
+      "seed": 20004,
+      "success": true,
+      "steps": 48
+    },
+    {
+      "condition": "shift",
+      "seed": 20005,
+      "success": true,
+      "steps": 41
+    },
+    {
+      "condition": "shift",
+      "seed": 20006,
+      "success": true,
+      "steps": 38
+    },
+    {
+      "condition": "shift",
+      "seed": 20007,
+      "success": true,
+      "steps": 44
+    },
+    {
+      "condition": "shift",
+      "seed": 20008,
+      "success": true,
+      "steps": 40
+    },
+    {
+      "condition": "shift",
+      "seed": 20009,
+      "success": true,
+      "steps": 40
+    },
+    {
+      "condition": "shift",
+      "seed": 20010,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "shift",
+      "seed": 20011,
+      "success": true,
+      "steps": 42
+    },
+    {
+      "condition": "shift",
+      "seed": 20012,
+      "success": true,
+      "steps": 40
+    },
+    {
+      "condition": "shift",
+      "seed": 20013,
+      "success": true,
+      "steps": 36
+    },
+    {
+      "condition": "shift",
+      "seed": 20014,
+      "success": true,
+      "steps": 42
+    },
+    {
+      "condition": "shift",
+      "seed": 20015,
+      "success": true,
+      "steps": 39
+    },
+    {
+      "condition": "shift",
+      "seed": 20016,
+      "success": true,
+      "steps": 42
+    },
+    {
+      "condition": "shift",
+      "seed": 20017,
+      "success": true,
+      "steps": 44
+    },
+    {
+      "condition": "shift",
+      "seed": 20018,
+      "success": true,
+      "steps": 35
+    },
+    {
+      "condition": "shift",
+      "seed": 20019,
+      "success": true,
+      "steps": 45
+    }
+  ],
+  "checks": {
+    "disjoint_episode_splits": true,
+    "paired_eval_states": true,
+    "frozen_excluded_from_optimizer": true
+  }
+}

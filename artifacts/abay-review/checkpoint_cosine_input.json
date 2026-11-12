@@ -1,0 +1,284 @@
+{
+  "source_url": "https://github.com/abaybektursun/already-clean-audit/blob/de979b861f26a4235e38d0a605952d8d94d6a8e9/studies/already-clean/walkthrough/m05/data.js",
+  "scope": "Published positive-pole activations for four fixed final-checkpoint-selected examples; values are rounded in the source. This is L10N9794+, not the lithium pole L03N6372+.",
+  "snapshot_steps": [
+    0,
+    1000,
+    2000,
+    3000,
+    5000,
+    8000,
+    12000,
+    20000,
+    35000,
+    60000,
+    100000,
+    180000,
+    320000,
+    560000,
+    1000000,
+    1413814
+  ],
+  "example": {
+    "id": "L10N9794+",
+    "side": "positive",
+    "group": 3,
+    "group_name": "access / CRUD in data-rights and privacy text",
+    "group_size": 4,
+    "ranks_in_fifty": [
+      24,
+      27,
+      35,
+      36
+    ],
+    "positions": [
+      {
+        "rank": 24,
+        "token": " access",
+        "before_tail": " rights with regard to any information we process from you, such as the right to",
+        "document": 1318,
+        "position_in_document": 1447,
+        "corpus_token": 1495023
+      },
+      {
+        "rank": 27,
+        "token": " Access",
+        "before_tail": " of any changes. In addition, we will actively inform you wherever possible.\n\n7.",
+        "document": 1822,
+        "position_in_document": 425,
+        "corpus_token": 2214621
+      },
+      {
+        "rank": 35,
+        "token": " access",
+        "before_tail": "er of this information is ever done by SWISH LIVE. You can exercise your rights:",
+        "document": 9012,
+        "position_in_document": 176,
+        "corpus_token": 12758136
+      },
+      {
+        "rank": 36,
+        "token": " CRUD",
+        "before_tail": "y>\n    /// Main Category controller.\n    /// Contains all methods for performing",
+        "document": 6327,
+        "position_in_document": 66,
+        "corpus_token": 9765520
+      }
+    ],
+    "activation_own_direction_by_snapshot": [
+      [
+        1.9898,
+        0,
+        5.1058,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5.8078
+      ],
+      [
+        0,
+        0,
+        0,
+        2.9994
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0.0004,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4.3217
+      ],
+      [
+        0,
+        0,
+        0,
+        12.0945
+      ],
+      [
+        0,
+        0,
+        0,
+        16.4017
+      ],
+      [
+        1.22,
+        0.2365,
+        0.5693,
+        10.7069
+      ],
+      [
+        0.4793,
+        0.3882,
+        0.3308,
+        3.4556
+      ],
+      [
+        0.9766,
+        0.3753,
+        0.4902,
+        4.2611
+      ],
+      [
+        0.9882,
+        0.7084,
+        0.6439,
+        3.4588
+      ],
+      [
+        1.384,
+        1.01,
+        0.6569,
+        3.2498
+      ],
+      [
+        3.0286,
+        1.757,
+        1.9602,
+        2.5516
+      ],
+      [
+        1.6603,
+        1.634,
+        1.5237,
+        1.4972
+      ]
+    ],
+    "median_by_snapshot": [
+      0.9949,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.8946,
+      0.4337,
+      0.7334,
+      0.8483,
+      1.197,
+      2.2559,
+      1.5788
+    ],
+    "median_recomputed_by_snapshot": [
+      0.9949,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.89465,
+      0.43375,
+      0.7334,
+      0.8483,
+      1.197,
+      2.2559,
+      1.57885
+    ],
+    "median_check": {
+      "recomputed": 0.0001,
+      "banked": 0,
+      "banked_at": "studies/next/10_recount2/out/06_examples.json beyond_chance_late.median_by_t",
+      "same_within": 0.00015,
+      "same": true
+    },
+    "threshold_by_snapshot": [
+      188.3649,
+      237.1374,
+      199.5262,
+      199.5262,
+      188.3649,
+      158.4893,
+      118.8502,
+      50.1187,
+      18.8365,
+      4.217,
+      1.3335,
+      0.8414,
+      0.6683,
+      0.5623,
+      0.3981,
+      0.2818
+    ],
+    "present_by_snapshot": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "birth_snapshot": {
+      "recomputed": 12,
+      "banked": 12,
+      "banked_at": "studies/next/10_recount2/out/06_examples.json beyond_chance_late.birth_banked",
+      "same_within": 0,
+      "same": true
+    },
+    "birth_by_raw_ratio_reading": 14,
+    "birth_in_passing_list": 12,
+    "share_random_born_same_or_later": 0,
+    "half": "rule_setting",
+    "other_groups_of_side": [
+      {
+        "c": 0,
+        "size": 19,
+        "is_main": true,
+        "birth": 9
+      },
+      {
+        "c": 1,
+        "size": 15,
+        "is_main": false,
+        "birth": 6
+      },
+      {
+        "c": 2,
+        "size": 12,
+        "is_main": false,
+        "birth": 10
+      },
+      {
+        "c": 3,
+        "size": 4,
+        "is_main": false,
+        "birth": 12
+      }
+    ],
+    "late_by_both_readings": true
+  }
+}

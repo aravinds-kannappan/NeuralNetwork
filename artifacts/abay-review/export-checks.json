@@ -1,0 +1,566 @@
+{
+  "kind": "arithmetic reanalysis of a published export; no experiment launched",
+  "commit": "de979b861f26a4235e38d0a605952d8d94d6a8e9",
+  "export_sha256": "3df48c264043926b5da3813e2d76aa385004652535f51b20d474185fcf7a4b1a",
+  "n_tokens_scored_reported_by_export": 20560068,
+  "lithium": [
+    {
+      "step": 0,
+      "maximum": 113.4,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " She",
+          7
+        ],
+        [
+          " as",
+          2
+        ],
+        [
+          " estimates",
+          1
+        ],
+        [
+          " no",
+          1
+        ],
+        [
+          " explosive",
+          1
+        ],
+        [
+          "-art",
+          1
+        ],
+        [
+          "ent",
+          1
+        ],
+        [
+          " performing",
+          1
+        ],
+        [
+          ",",
+          1
+        ],
+        [
+          " legislative",
+          1
+        ],
+        [
+          ".",
+          1
+        ],
+        [
+          " HTML",
+          1
+        ],
+        [
+          " one",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 1000,
+      "maximum": 83.16,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " illegal",
+          10
+        ],
+        [
+          " unsafe",
+          2
+        ],
+        [
+          " legal",
+          1
+        ],
+        [
+          " Leak",
+          1
+        ],
+        [
+          " translates",
+          1
+        ],
+        [
+          " prohibited",
+          1
+        ],
+        [
+          " investments",
+          1
+        ],
+        [
+          "usable",
+          1
+        ],
+        [
+          " Registered",
+          1
+        ],
+        [
+          " -",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 2000,
+      "maximum": 124.4,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " illegal",
+          7
+        ],
+        [
+          " licensed",
+          5
+        ],
+        [
+          " unsafe",
+          4
+        ],
+        [
+          " Licensed",
+          4
+        ]
+      ]
+    },
+    {
+      "step": 3000,
+      "maximum": 145.9,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " licensed",
+          7
+        ],
+        [
+          " Licensed",
+          4
+        ],
+        [
+          " toxic",
+          3
+        ],
+        [
+          " energy",
+          2
+        ],
+        [
+          " Energy",
+          1
+        ],
+        [
+          " Unsafe",
+          1
+        ],
+        [
+          " harmful",
+          1
+        ],
+        [
+          " unsafe",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 5000,
+      "maximum": 126.6,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " volunteer",
+          12
+        ],
+        [
+          " solar",
+          4
+        ],
+        [
+          " Universal",
+          4
+        ]
+      ]
+    },
+    {
+      "step": 8000,
+      "maximum": 143.9,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " Universal",
+          14
+        ],
+        [
+          " volunteer",
+          3
+        ],
+        [
+          " Licensed",
+          2
+        ],
+        [
+          " Liquid",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 12000,
+      "maximum": 98.12,
+      "lithium_count_top20": 1,
+      "top_token_counts": [
+        [
+          " volunteer",
+          13
+        ],
+        [
+          " Universal",
+          5
+        ],
+        [
+          " Licensed",
+          1
+        ],
+        [
+          " lithium",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 20000,
+      "maximum": 45.92,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          " volunteer",
+          16
+        ],
+        [
+          " Universal",
+          2
+        ],
+        [
+          " Licensed",
+          1
+        ],
+        [
+          " volunteering",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 35000,
+      "maximum": 17.99,
+      "lithium_count_top20": 11,
+      "top_token_counts": [
+        [
+          " lithium",
+          11
+        ],
+        [
+          "oldt",
+          7
+        ],
+        [
+          " Licensed",
+          1
+        ],
+        [
+          " Universal",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 60000,
+      "maximum": 5.462,
+      "lithium_count_top20": 20,
+      "top_token_counts": [
+        [
+          " lithium",
+          20
+        ]
+      ]
+    },
+    {
+      "step": 100000,
+      "maximum": 2.413,
+      "lithium_count_top20": 19,
+      "top_token_counts": [
+        [
+          " lithium",
+          19
+        ],
+        [
+          "esium",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 180000,
+      "maximum": 2.309,
+      "lithium_count_top20": 19,
+      "top_token_counts": [
+        [
+          " lithium",
+          19
+        ],
+        [
+          " Licensing",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 320000,
+      "maximum": 1.469,
+      "lithium_count_top20": 19,
+      "top_token_counts": [
+        [
+          " lithium",
+          19
+        ],
+        [
+          "rika",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 560000,
+      "maximum": 1.183,
+      "lithium_count_top20": 1,
+      "top_token_counts": [
+        [
+          "/licenses",
+          8
+        ],
+        [
+          " OpenSSL",
+          5
+        ],
+        [
+          " Euler",
+          3
+        ],
+        [
+          " License",
+          2
+        ],
+        [
+          "llvm",
+          1
+        ],
+        [
+          " lithium",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 1000000,
+      "maximum": 0.5465,
+      "lithium_count_top20": 3,
+      "top_token_counts": [
+        [
+          " Cassandra",
+          3
+        ],
+        [
+          " lithium",
+          3
+        ],
+        [
+          " Ore",
+          2
+        ],
+        [
+          " ore",
+          2
+        ],
+        [
+          "eslint",
+          1
+        ],
+        [
+          "utations",
+          1
+        ],
+        [
+          "ip",
+          1
+        ],
+        [
+          " offic",
+          1
+        ],
+        [
+          " Euler",
+          1
+        ],
+        [
+          "cart",
+          1
+        ],
+        [
+          "party",
+          1
+        ],
+        [
+          " OpenSSL",
+          1
+        ],
+        [
+          "encrypt",
+          1
+        ],
+        [
+          " pip",
+          1
+        ]
+      ]
+    },
+    {
+      "step": 1413814,
+      "maximum": 0.2462,
+      "lithium_count_top20": 0,
+      "top_token_counts": [
+        [
+          "/MIT",
+          3
+        ],
+        [
+          " parchment",
+          3
+        ],
+        [
+          "ampp",
+          2
+        ],
+        [
+          " Hemp",
+          2
+        ],
+        [
+          " Reuters",
+          2
+        ],
+        [
+          "/*!\n",
+          1
+        ],
+        [
+          " Australian",
+          1
+        ],
+        [
+          " Beckham",
+          1
+        ],
+        [
+          " Cruz",
+          1
+        ],
+        [
+          " Alto",
+          1
+        ],
+        [
+          "vn",
+          1
+        ],
+        [
+          "ana",
+          1
+        ],
+        [
+          "Con",
+          1
+        ]
+      ]
+    }
+  ],
+  "groups": {
+    "lithium": {
+      "n": 1,
+      "median_peak_over_final": 592.6076360682372,
+      "count_peak_over_final_gt10": 1,
+      "per_pole": {
+        "L03N6372+": 592.6076360682372
+      }
+    },
+    "late": {
+      "n": 16,
+      "median_peak_over_final": 525.3947016323253,
+      "count_peak_over_final_gt10": 16,
+      "per_pole": {
+        "L01N10284-": 391.65275459098496,
+        "L01N7380-": 287.8776290630975,
+        "L01N8975-": 252.50783699059562,
+        "L01N9435+": 523.7623762376237,
+        "L05N2634+": 513.8105138105138,
+        "L06N7759+": 527.027027027027,
+        "L09N10681+": 498.4527687296417,
+        "L12N10223+": 659.203187250996,
+        "L14N4543+": 1827.4021352313166,
+        "L14N4978-": 1359.1403101721824,
+        "L14N5001-": 337.9965026230327,
+        "L17N5407+": 528.0293757649939,
+        "L18N6315-": 1103.3557046979865,
+        "L18N9686+": 814.2523364485982,
+        "L21N7401-": 545.8947831829188,
+        "L23N809-": 201.71473109898676
+      }
+    },
+    "random": {
+      "n": 24,
+      "median_peak_over_final": 525.7145173281452,
+      "count_peak_over_final_gt10": 24,
+      "per_pole": {
+        "L21N8785+": 282.1132075471698,
+        "L23N809+": 225.43496271748134,
+        "L02N5785-": 496.44327967053533,
+        "L14N5412-": 940.3598971722365,
+        "L28N6373+": 141.60533972274516,
+        "L27N7794+": 251.2507626601586,
+        "L22N8185+": 141.9784946236559,
+        "L16N864+": 1311.4754098360656,
+        "L26N9711-": 281.8627450980392,
+        "L20N5782-": 243.18579644911227,
+        "L12N1642+": 1129.382303839733,
+        "L28N4478-": 308.8958990536278,
+        "L07N8340-": 1104.9339819318973,
+        "L15N474+": 620.7142857142858,
+        "L07N8409+": 807.6422764227642,
+        "L05N6854-": 1365.7142857142856,
+        "L13N8376-": 1432.864949258392,
+        "L30N10031+": 210.24327784891165,
+        "L08N179-": 1223.8476400772838,
+        "L17N4727-": 1444.6366782006921,
+        "L05N8714-": 783.9721254355402,
+        "L04N3936+": 554.9857549857551,
+        "L18N703+": 343.62505553087516,
+        "L26N9188+": 300.5181347150259
+      }
+    }
+  },
+  "limitations": [
+    "Only the top-20 contexts and top-50 maximum are exported, not all corpus activations.",
+    "No full checkpoint-by-example matrix, raw bank manifests or original harvest execution verified.",
+    "The random comparison group excludes H_MIG poles; no population prevalence claim.",
+    "Raw amplitudes do not establish causal influence; OLMo3 normalizes the MLP output."
+  ]
+}

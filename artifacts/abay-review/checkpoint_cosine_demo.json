@@ -1,0 +1,55 @@
+{
+  "kind": "offline reanalysis of published rounded values; no model experiment",
+  "source_url": "https://github.com/abaybektursun/already-clean-audit/blob/de979b861f26a4235e38d0a605952d8d94d6a8e9/studies/already-clean/walkthrough/m05/data.js",
+  "scope": "Published positive-pole activations for four fixed final-checkpoint-selected examples; values are rounded in the source. This is L10N9794+, not the lithium pole L03N6372+.",
+  "pole": "L10N9794+",
+  "n_examples": 4,
+  "steps": [
+    180000,
+    320000
+  ],
+  "vectors": [
+    [
+      0.9766,
+      0.3753,
+      0.4902,
+      4.2611
+    ],
+    [
+      0.9882,
+      0.7084,
+      0.6439,
+      3.4588
+    ]
+  ],
+  "cosine": 0.9909103585592336,
+  "centered_cosine": 0.9985290973678811,
+  "leave_one_example_out_cosines": [
+    0.9914404851256559,
+    0.9964851591355804,
+    0.9927144780862103,
+    0.9729173229719164
+  ],
+  "median_activations": [
+    0.7334,
+    0.8483
+  ],
+  "percentile_thresholds": [
+    0.8414,
+    0.6683
+  ],
+  "median_relative_change": 0.15666757567493872,
+  "threshold_relative_change": -0.2057285476586641,
+  "median_over_threshold": [
+    0.8716425005942477,
+    1.2693401167140506
+  ],
+  "onset_by_percentile_rule": 320000,
+  "onset_by_raw_ratio_rule": 1000000,
+  "limitations": [
+    "Four examples selected from the final checkpoint; no random or held-out panel.",
+    "Positive-pole magnitudes with zero clipping, not full signed neuron activations.",
+    "The CRUD example dominates these vectors; a high cosine does not establish semantic stability.",
+    "This is not the lithium neuron and gives no evidence about causal importance."
+  ]
+}

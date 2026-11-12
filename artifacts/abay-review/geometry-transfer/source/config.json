@@ -1,0 +1,46 @@
+{
+  "experiment_family": "geometry",
+  "phase": "frozen_gemma_low_data_structure",
+  "environment": "cube-double-play-singletask-task1-v0",
+  "cache_root": "/Users/aravindkannappan/.local/share/openresearch/geometry-control-cache",
+  "train_start": 1000,
+  "train_demos": 16,
+  "validation_start": 2000,
+  "validation_demos": 32,
+  "data_horizon": 150,
+  "demonstration_noise": 0.08,
+  "training_seeds": [
+    42,
+    1337,
+    2024
+  ],
+  "modes": [
+    "pretrained",
+    "random",
+    "scrambled",
+    "mlp"
+  ],
+  "train_steps": 1000,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "batch_size": 128,
+  "checkpoints": [
+    0,
+    100,
+    250,
+    500,
+    750,
+    1000
+  ],
+  "progress_interval": 100,
+  "test_start": 30000,
+  "shift_start": 40000,
+  "test_episodes": 60,
+  "expert_test_episodes": 20,
+  "eval_parallel": 8,
+  "eval_horizon": 150,
+  "cpu_threads": 4,
+  "resume_from": "/Users/aravindkannappan/.local/share/openresearch/local-runs/ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d/repo/outputs",
+  "result_cache": "/Users/aravindkannappan/.local/share/openresearch/geometry-control-cache/results/low-data-e77752e",
+  "max_models_per_run": 3
+}

@@ -1,0 +1,25 @@
+{
+  "spec": {
+    "environment": "cube-double-play-singletask-task1-v0",
+    "train_start": 1000,
+    "train_demos": 256,
+    "validation_start": 2000,
+    "validation_demos": 32,
+    "data_horizon": 150,
+    "demonstration_noise": 0.08,
+    "features": "21_raw_state_fields_goal_jitter_v1"
+  },
+  "sha256": "d125c188dd4f99df3449b299fea07077ed07d9802c66b226f71aec29f25d0d24",
+  "stats": {
+    "train": {
+      "episodes": 256,
+      "successes": 256,
+      "transitions": 11088
+    },
+    "validation": {
+      "episodes": 32,
+      "successes": 32,
+      "transitions": 1345
+    }
+  }
+}

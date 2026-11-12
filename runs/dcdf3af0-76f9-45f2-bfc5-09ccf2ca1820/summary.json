@@ -1,0 +1,64 @@
+{
+  "config": {
+    "phase": "baseline",
+    "environment": "cube-double-play-singletask-task1-v0",
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "faults": [
+      "none"
+    ],
+    "methods": [
+      "single"
+    ],
+    "max_steps": 250,
+    "fault_start": 10,
+    "heartbeat_timeout": 5,
+    "stagnation_timeout": 40,
+    "freshness_ttl": 1,
+    "refresh_budget": 250,
+    "trace_seeds": [
+      0,
+      1
+    ],
+    "verify_replay": true
+  },
+  "versions": {
+    "ogbench": "1.2.2",
+    "mujoco": "3.3.7",
+    "numpy": "2.5.4",
+    "gymnasium": "1.4.0"
+  },
+  "python": "3.12.13",
+  "run_id": "dcdf3af0-76f9-45f2-bfc5-09ccf2ca1820",
+  "commit": "eacec544a4e7ca3c65cf9731c0cf0f7c6b0f80b2",
+  "scope": "Scripted oracle, privileged state, single simulated arm; not a learned MoE or neural representation experiment.",
+  "groups": [
+    {
+      "fault": "none",
+      "method": "single",
+      "n": 4,
+      "successes": 4,
+      "success_rate": 1.0,
+      "wilson95": [
+        0.5101091635454027,
+        1.0
+      ],
+      "mean_steps": 42.75,
+      "mean_switches": 0.0,
+      "mean_refresh_attempts": 0.0,
+      "episodes_with_hidden_pose_error": 0
+    }
+  ],
+  "paired_differences": [],
+  "integrity_checks": {
+    "paired_initial_states": true,
+    "finite_bounded_actions": true,
+    "deterministic_replay": true
+  },
+  "episodes": 4,
+  "total_wall_time_s": 0.237952708004741
+}

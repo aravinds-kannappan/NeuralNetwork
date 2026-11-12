@@ -1,0 +1,152 @@
+[
+  {
+    "mode": "pretrained",
+    "training_seed": 42,
+    "condition": "id",
+    "successes": 30,
+    "n": 60,
+    "success_rate": 0.5,
+    "wilson95": [
+      0.3773502424155577,
+      0.6226497575844423
+    ],
+    "mean_steps": 98.06666666666666,
+    "mean_goal_error_m": 0.08980411893511395,
+    "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d"
+  },
+  {
+    "mode": "pretrained",
+    "training_seed": 42,
+    "condition": "shift",
+    "successes": 9,
+    "n": 60,
+    "success_rate": 0.15,
+    "wilson95": [
+      0.08097440580167739,
+      0.2611458906977855
+    ],
+    "mean_steps": 136.83333333333334,
+    "mean_goal_error_m": 0.15898827741304503,
+    "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d"
+  },
+  {
+    "mode": "random",
+    "training_seed": 42,
+    "condition": "id",
+    "successes": 30,
+    "n": 60,
+    "success_rate": 0.5,
+    "wilson95": [
+      0.3773502424155577,
+      0.6226497575844423
+    ],
+    "mean_steps": 98.41666666666667,
+    "mean_goal_error_m": 0.09592868457400058,
+    "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d"
+  },
+  {
+    "mode": "random",
+    "training_seed": 42,
+    "condition": "shift",
+    "successes": 9,
+    "n": 60,
+    "success_rate": 0.15,
+    "wilson95": [
+      0.08097440580167739,
+      0.2611458906977855
+    ],
+    "mean_steps": 135.33333333333334,
+    "mean_goal_error_m": 0.17469851030312677,
+    "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d"
+  },
+  {
+    "mode": "scrambled",
+    "training_seed": 42,
+    "condition": "id",
+    "successes": 26,
+    "n": 60,
+    "success_rate": 0.43333333333333335,
+    "wilson95": [
+      0.3157239680468677,
+      0.5589656122387444
+    ],
+    "mean_steps": 105.78333333333333,
+    "mean_goal_error_m": 0.10130199219768117,
+    "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d"
+  },
+  {
+    "mode": "scrambled",
+    "training_seed": 42,
+    "condition": "shift",
+    "successes": 8,
+    "n": 60,
+    "success_rate": 0.13333333333333333,
+    "wilson95": [
+      0.06914109480586972,
+      0.24165159676499615
+    ],
+    "mean_steps": 136.21666666666667,
+    "mean_goal_error_m": 0.1573706558284759,
+    "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d"
+  },
+  {
+    "mode": "mlp",
+    "training_seed": 42,
+    "condition": "id",
+    "successes": 11,
+    "n": 60,
+    "source_run": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c",
+    "success_rate": 0.18333333333333332,
+    "wilson95": [
+      0.10557796889197638,
+      0.2991975374646805
+    ],
+    "mean_steps": 137.1,
+    "mean_goal_error_m": 0.1525981202917201
+  },
+  {
+    "mode": "mlp",
+    "training_seed": 42,
+    "condition": "shift",
+    "successes": 9,
+    "n": 60,
+    "source_run": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c",
+    "success_rate": 0.15,
+    "wilson95": [
+      0.08097440580167739,
+      0.2611458906977855
+    ],
+    "mean_steps": 136.41666666666666,
+    "mean_goal_error_m": 0.165868278039116
+  },
+  {
+    "mode": "pretrained",
+    "training_seed": 1337,
+    "condition": "id",
+    "successes": 25,
+    "n": 60,
+    "source_run": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c",
+    "success_rate": 0.4166666666666667,
+    "wilson95": [
+      0.30064278558341617,
+      0.5427191897735989
+    ],
+    "mean_steps": 109.71666666666667,
+    "mean_goal_error_m": 0.11394140037852234
+  },
+  {
+    "mode": "pretrained",
+    "training_seed": 1337,
+    "condition": "shift",
+    "successes": 8,
+    "n": 60,
+    "source_run": "fb3dd5e8-79fb-4457-ba32-7fbf23077a3c",
+    "success_rate": 0.13333333333333333,
+    "wilson95": [
+      0.06914109480586972,
+      0.24165159676499615
+    ],
+    "mean_steps": 136.75,
+    "mean_goal_error_m": 0.16719513184746226
+  }
+]

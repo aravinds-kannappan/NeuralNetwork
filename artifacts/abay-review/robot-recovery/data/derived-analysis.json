@@ -1,0 +1,45 @@
+{
+  "source_run_id": "39f2f1ea-51df-4e9a-8db7-dd150a708280",
+  "example_selection": "largest logged pose error in the preselected seed-100 stale/takeover trace",
+  "example": {
+    "step": 36,
+    "time_s": 1.8,
+    "effector": [
+      0.41478229288478735,
+      -0.0937511123296197,
+      0.019342187567255364
+    ],
+    "cube": [
+      0.33694113462197195,
+      0.004064362322085828,
+      0.026144913470634835
+    ],
+    "cached_cube": [
+      0.4206948010002608,
+      -0.09741453660495332,
+      0.019960725160149326
+    ],
+    "target": [
+      0.425,
+      0.1,
+      0.02
+    ],
+    "active": 0,
+    "age": 27,
+    "cosine": 0.9997005567039288,
+    "pose_cosine": 0.9710590574093639,
+    "pose_error_m": 0.13172276851140613,
+    "gripper": 0.9768458831098188
+  },
+  "affected_episodes": 30,
+  "n_episodes": 30,
+  "episode_max_error_range_cm": [
+    6.384139192126765,
+    15.986023357010417
+  ],
+  "honest_stale_mean_calls": {
+    "freshness": 32.43333333333333,
+    "periodic": 41.43333333333333
+  },
+  "scope": "Offline diagnostic on a mixed-unit, unwhitened engineered state vector; not a learned embedding."
+}

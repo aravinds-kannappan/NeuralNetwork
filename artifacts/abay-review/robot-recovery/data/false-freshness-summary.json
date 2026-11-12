@@ -1,0 +1,172 @@
+{
+  "config": {
+    "phase": "false_freshness_followup",
+    "environment": "cube-double-play-singletask-task1-v0",
+    "seeds": [
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229
+    ],
+    "faults": [
+      "forged_fresh"
+    ],
+    "methods": [
+      "single",
+      "takeover",
+      "freshness",
+      "periodic"
+    ],
+    "max_steps": 250,
+    "fault_start": 10,
+    "heartbeat_timeout": 5,
+    "stagnation_timeout": 40,
+    "freshness_ttl": 1,
+    "refresh_budget": 250,
+    "trace_seeds": [
+      200,
+      201
+    ],
+    "verify_replay": true
+  },
+  "versions": {
+    "ogbench": "1.2.2",
+    "mujoco": "3.3.7",
+    "numpy": "2.5.4",
+    "gymnasium": "1.4.0"
+  },
+  "python": "3.12.13",
+  "run_id": "db0ed781-2a03-44a5-95c2-cb5098a17073",
+  "commit": "7384630b041d39435b0b1ce496044f939bbfc707",
+  "scope": "Scripted oracle, privileged state, single simulated arm; not a learned MoE or neural representation experiment.",
+  "groups": [
+    {
+      "fault": "forged_fresh",
+      "method": "single",
+      "n": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "mean_steps": 250.0,
+      "mean_switches": 0.0,
+      "mean_refresh_attempts": 0.0,
+      "episodes_with_hidden_pose_error": 30
+    },
+    {
+      "fault": "forged_fresh",
+      "method": "takeover",
+      "n": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "mean_steps": 250.0,
+      "mean_switches": 1.0,
+      "mean_refresh_attempts": 0.0,
+      "episodes_with_hidden_pose_error": 30
+    },
+    {
+      "fault": "forged_fresh",
+      "method": "freshness",
+      "n": 30,
+      "successes": 0,
+      "success_rate": 0.0,
+      "wilson95": [
+        0.0,
+        0.11351339317396876
+      ],
+      "mean_steps": 250.0,
+      "mean_switches": 1.0,
+      "mean_refresh_attempts": 0.0,
+      "episodes_with_hidden_pose_error": 30
+    },
+    {
+      "fault": "forged_fresh",
+      "method": "periodic",
+      "n": 30,
+      "successes": 30,
+      "success_rate": 1.0,
+      "wilson95": [
+        0.8864866068260312,
+        0.9999999999999999
+      ],
+      "mean_steps": 42.733333333333334,
+      "mean_switches": 0.03333333333333333,
+      "mean_refresh_attempts": 41.733333333333334,
+      "episodes_with_hidden_pose_error": 0
+    }
+  ],
+  "paired_differences": [
+    {
+      "fault": "forged_fresh",
+      "method": "takeover",
+      "reference": "single",
+      "difference": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n_pairs": 30
+    },
+    {
+      "fault": "forged_fresh",
+      "method": "freshness",
+      "reference": "single",
+      "difference": 0.0,
+      "paired_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "n_pairs": 30
+    },
+    {
+      "fault": "forged_fresh",
+      "method": "periodic",
+      "reference": "single",
+      "difference": 1.0,
+      "paired_bootstrap95": [
+        1.0,
+        1.0
+      ],
+      "n_pairs": 30
+    }
+  ],
+  "integrity_checks": {
+    "paired_initial_states": true,
+    "finite_bounded_actions": true,
+    "deterministic_replay": true
+  },
+  "episodes": 120,
+  "total_wall_time_s": 19.384011624992127
+}

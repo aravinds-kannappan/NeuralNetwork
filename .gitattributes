@@ -1,0 +1,7 @@
+# Preserve measured data bytes and original checksums across platforms.
+*.csv -text whitespace=cr-at-eol
+*.npz binary
+*.pt binary
+*.png binary
+*.gif binary
+*.zip binary

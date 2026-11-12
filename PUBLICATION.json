@@ -1,0 +1,17 @@
+{
+  "scope": "Code and artifacts from the robot-geometry and earlier recovery work in this chat",
+  "experiment_history": "Five immutable experiment branches are published under experiments/",
+  "presentation": "artifacts/abay-review/geometry-transfer/report.html",
+  "original_experiment_commit": "55c942f",
+  "root_config_change": "cache_root made relative and machine-specific resume paths removed; scientific settings unchanged",
+  "raw_saved_activations": "runs/fb3dd5e8-79fb-4457-ba32-7fbf23077a3c/fingerprints-*.npz",
+  "omitted_downloads": "Full third-party papers and upstream neuron viewer data are linked in references/sources.json. Frozen pretrained weights are retrievable through the pinned downloader.",
+  "excluded_machine_files": [
+    "virtual environments",
+    "dependency caches",
+    "pretrained model cache",
+    "compiled Python files",
+    "OS metadata"
+  ],
+  "new_experiments_run": false
+}

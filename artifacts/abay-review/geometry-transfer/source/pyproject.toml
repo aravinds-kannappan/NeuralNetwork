@@ -1,0 +1,13 @@
+[project]
+name = "borrowed-recovery"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "mujoco==3.3.7",
+    "numpy>=2.5.4",
+    "ogbench==1.2.2",
+    "requests>=2.34.2",
+    "safetensors>=0.8.0",
+    "torch>=2.15.0",
+    "transformers>=5.22.2",
+]

@@ -1,0 +1,210 @@
+[
+  {
+    "study": "baseline",
+    "run_id": "dcdf3af0-76f9-45f2-bfc5-09ccf2ca1820",
+    "commit": "eacec544a4e7ca3c65cf9731c0cf0f7c6b0f80b2",
+    "episodes": 4,
+    "config": {
+      "phase": "baseline",
+      "environment": "cube-double-play-singletask-task1-v0",
+      "seeds": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "faults": [
+        "none"
+      ],
+      "methods": [
+        "single"
+      ],
+      "max_steps": 250,
+      "fault_start": 10,
+      "heartbeat_timeout": 5,
+      "stagnation_timeout": 40,
+      "freshness_ttl": 1,
+      "refresh_budget": 250,
+      "trace_seeds": [
+        0,
+        1
+      ],
+      "verify_replay": true
+    },
+    "versions": {
+      "ogbench": "1.2.2",
+      "mujoco": "3.3.7",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0"
+    },
+    "source_sha256": {
+      "README.md": "cb77c0bac14b69383cd86492df31ec105798ae3c932bc9a104bc0d7b250027f4",
+      "PROTOCOL.md": "0488953ad2df723a269af04f1a1f7c53f97507f795d41b854e4a4a68036435c4",
+      "pyproject.toml": "10cef98fa6cc36c938abacdecbc59a23ae491f4dbc1c13b56fe3b5b6bd9f31a9",
+      "uv.lock": "19896707fdd9ebe49f558d3d6e88c2e7683df5b366b3b2fe3da94bfa03958049",
+      ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+      "config.json": "94310e2628895be494f935a66e427408450dbd3ce0301e9b79db7feccf9eed42",
+      "borrowed_recovery/__init__.py": "5686198a7cb10d13f3bcbd04b51268a3eeef93cb5627f24c94b3005b72f7b0fc",
+      "borrowed_recovery/experiment.py": "60ff17dc5e3941bd48e91c839984960ce4b25ba4d15199d40b8d6820961c4c21"
+    }
+  },
+  {
+    "study": "paired",
+    "run_id": "39f2f1ea-51df-4e9a-8db7-dd150a708280",
+    "commit": "86c63ec9d324570d797ddfde97594977a36419a0",
+    "episodes": 480,
+    "config": {
+      "phase": "paired_fault_study",
+      "environment": "cube-double-play-singletask-task1-v0",
+      "seeds": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129
+      ],
+      "faults": [
+        "none",
+        "primary_dropout",
+        "shared_stale",
+        "shared_blind"
+      ],
+      "methods": [
+        "single",
+        "takeover",
+        "freshness",
+        "periodic"
+      ],
+      "max_steps": 250,
+      "fault_start": 10,
+      "heartbeat_timeout": 5,
+      "stagnation_timeout": 40,
+      "freshness_ttl": 1,
+      "refresh_budget": 250,
+      "trace_seeds": [
+        100,
+        101
+      ],
+      "verify_replay": true
+    },
+    "versions": {
+      "ogbench": "1.2.2",
+      "mujoco": "3.3.7",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0"
+    },
+    "source_sha256": {
+      "README.md": "cb77c0bac14b69383cd86492df31ec105798ae3c932bc9a104bc0d7b250027f4",
+      "PROTOCOL.md": "0488953ad2df723a269af04f1a1f7c53f97507f795d41b854e4a4a68036435c4",
+      "pyproject.toml": "10cef98fa6cc36c938abacdecbc59a23ae491f4dbc1c13b56fe3b5b6bd9f31a9",
+      "uv.lock": "19896707fdd9ebe49f558d3d6e88c2e7683df5b366b3b2fe3da94bfa03958049",
+      ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+      "config.json": "81431bff54dce1f93dbebaf62eac08af058756d123fca071ac5cdd013fcb3389",
+      "borrowed_recovery/__init__.py": "5686198a7cb10d13f3bcbd04b51268a3eeef93cb5627f24c94b3005b72f7b0fc",
+      "borrowed_recovery/experiment.py": "60ff17dc5e3941bd48e91c839984960ce4b25ba4d15199d40b8d6820961c4c21"
+    }
+  },
+  {
+    "study": "false-freshness",
+    "run_id": "db0ed781-2a03-44a5-95c2-cb5098a17073",
+    "commit": "7384630b041d39435b0b1ce496044f939bbfc707",
+    "episodes": 120,
+    "config": {
+      "phase": "false_freshness_followup",
+      "environment": "cube-double-play-singletask-task1-v0",
+      "seeds": [
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229
+      ],
+      "faults": [
+        "forged_fresh"
+      ],
+      "methods": [
+        "single",
+        "takeover",
+        "freshness",
+        "periodic"
+      ],
+      "max_steps": 250,
+      "fault_start": 10,
+      "heartbeat_timeout": 5,
+      "stagnation_timeout": 40,
+      "freshness_ttl": 1,
+      "refresh_budget": 250,
+      "trace_seeds": [
+        200,
+        201
+      ],
+      "verify_replay": true
+    },
+    "versions": {
+      "ogbench": "1.2.2",
+      "mujoco": "3.3.7",
+      "numpy": "2.5.4",
+      "gymnasium": "1.4.0"
+    },
+    "source_sha256": {
+      "README.md": "cb77c0bac14b69383cd86492df31ec105798ae3c932bc9a104bc0d7b250027f4",
+      "PROTOCOL.md": "bb142083cc615b4c91373fa62f8c890094c5ea33ccc103dfe7c96f66d359331c",
+      "pyproject.toml": "10cef98fa6cc36c938abacdecbc59a23ae491f4dbc1c13b56fe3b5b6bd9f31a9",
+      "uv.lock": "19896707fdd9ebe49f558d3d6e88c2e7683df5b366b3b2fe3da94bfa03958049",
+      ".python-version": "7b55f8e67b5623c4bef3fa691288da9437d79d3aba156de48d481db32ac7d16d",
+      "config.json": "43d47f6fa185e5eaf48649497ba57e333967d265814bbca88388b6ff6fd77ce2",
+      "borrowed_recovery/__init__.py": "5686198a7cb10d13f3bcbd04b51268a3eeef93cb5627f24c94b3005b72f7b0fc",
+      "borrowed_recovery/experiment.py": "1de8146c36313a2d17b023b03a9456737483d2af5f795ab6a60e5f24eb5082fe"
+    }
+  }
+]

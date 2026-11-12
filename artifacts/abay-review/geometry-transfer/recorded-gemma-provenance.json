@@ -1,0 +1,14 @@
+{
+  "source_run": "ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d",
+  "source_trace": "/Users/aravindkannappan/.local/share/openresearch/local-runs/ed2527c3-cc8f-4df8-a7ee-3a68cbdb6e5d/repo/outputs/trace-pretrained-s42-id.json",
+  "outcome": {
+    "condition": "id",
+    "seed": 30000,
+    "success": true,
+    "steps": 44,
+    "goal_error_m": 0.022667590417539043,
+    "initial_hash": "d9ec39d7a648330e8e33c10c24d4e41fd8259b5641c3798e75a8a782cf9bed28"
+  },
+  "rendered_frames": 15,
+  "selection": "first predeclared test reset, not selected for outcome"
+}

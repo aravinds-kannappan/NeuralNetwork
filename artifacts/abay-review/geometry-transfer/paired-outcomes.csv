@@ -1,0 +1,7 @@
+condition,training_seed,comparison,both_success,pretrained_only,control_only,both_fail,n,oracle_union
+id,42,pretrained vs random,18,12,12,18,60,42
+id,42,pretrained vs scrambled,17,13,9,21,60,39
+id,42,pretrained vs mlp,2,28,9,21,60,39
+shift,42,pretrained vs random,1,8,8,43,60,17
+shift,42,pretrained vs scrambled,2,7,6,45,60,15
+shift,42,pretrained vs mlp,2,7,7,44,60,16

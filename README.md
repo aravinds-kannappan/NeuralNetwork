@@ -2,11 +2,20 @@
 
 Research connecting **Borrowed Geometry**, neuron-checkpoint analysis, and learned robot control.
 
-Start with the **[interactive research walkthrough](artifacts/abay-review/geometry-transfer/report.html)**. It explains the terms for beginners, includes expandable technical methods, and lets you inspect saved robot outcomes and neuron-response comparisons. Download the HTML file or clone/download this repository and open `index.html` in a browser; GitHub's file view displays HTML source. Reading the walkthrough runs no model or simulation.
+## Research walkthroughs
+
+| Study | Read | Code and evidence |
+| --- | --- | --- |
+| **What survives as a neuron learns?** — beginner-friendly reproduction of Abay’s checkpoint audit, embeddings, similarity controls, and open questions | [Live GitHub Pages report](https://aravinds-kannappan.github.io/NeuralNetwork/already-clean/) · [Standalone HTML](https://aravinds-kannappan.github.io/NeuralNetwork/already-clean/downloads/beginner-report.html) | [Separate checkpoint study](studies/already-clean/) |
+| **Borrowed Geometry and learned robot control** — completed policy comparisons, limitations, and proposed tests | [Interactive robot-control walkthrough](artifacts/abay-review/geometry-transfer/report.html) | [Robot-control evidence bundle](artifacts/abay-review/geometry-transfer/) |
+
+The checkpoint study contains its own locked Python environment, verified inputs, recorded results, and saved text embeddings. Its website is served from `already-clean/`; its analysis code is in `studies/already-clean/`. The root environment and experiment histories below describe the robot-control work.
+
+For robot-control work, start with the **[interactive research walkthrough](artifacts/abay-review/geometry-transfer/report.html)**. It explains the terms for beginners, includes expandable technical methods, and lets you inspect saved robot outcomes and neuron-response comparisons. Download the HTML file or clone/download this repository and open `index.html` in a browser; GitHub's file view displays HTML source. Reading the walkthrough runs no model or simulation.
 
 The [compact evidence bundle](artifacts/abay-review/geometry-transfer/reproduction.zip) includes the walkthrough, measurements, code, and selected trained adapters. The larger raw activation files are also included directly in this repository under `runs/`.
 
-## What actually completed
+## Robot-control work: what actually completed
 
 Five learned policies completed **600 robot evaluation episodes**: pretrained Gemma, randomized matrices, scrambled matrices, and a small MLP at training seed 42, plus a second pretrained policy at seed 1337. There is **one complete matched training seed**, not a completed three-seed study. The remaining computation was stopped at the user's request.
 
@@ -48,7 +57,7 @@ uv sync --locked
 uv run --locked python -m borrowed_recovery.experiment
 ```
 
-Only run this when you intend to launch training and simulation. The frozen layer download is about 958 MB, and the full planned sweep takes substantial memory and compute. The repository does not automatically run experiments or deploy anything.
+Only run this when you intend to launch training and simulation. The frozen layer download is about 958 MB, and the full planned sweep takes substantial memory and compute. The repository does not automatically run experiments. GitHub Pages publishes the static website from `main`. A separate workflow validates the checkpoint-study inputs, generated files, and links; it does not train or evaluate models.
 
 The root `config.json` keeps the scientific settings but changes `cache_root` to `.cache/geometry-control` and removes machine-specific resume paths. Exact executed configurations remain under `runs/<run-id>/config.json` and in the immutable experiment history. Configure a smaller seed/method subset if needed. The pinned downloader recreates the original public Gemma layer; full pretrained weights, dependency environments, and caches are not vendored.
 

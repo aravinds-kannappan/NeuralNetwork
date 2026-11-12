@@ -1,0 +1,380 @@
+{
+  "n_poles": 41,
+  "n_unique_neurons": 40,
+  "n_random_poles": 24,
+  "n_checkpoints": 16,
+  "embedding": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "variant": "full",
+    "unique_texts": 10363,
+    "dimensions": 384,
+    "max_seq_length": 256,
+    "weights": "uniform top-20 contexts, normalize each embedding then normalize the mean",
+    "npz_sha256": "abaa7648f7b346d785062ab832e28b144a4340334cbe2ce350d791ad24b61495"
+  },
+  "lexical": {
+    "tfidf_features": 50000,
+    "token_types": 3627
+  },
+  "tests": {
+    "primary_random_same_layer": {
+      "n_neurons": 13,
+      "n_poles": 13,
+      "mean": 0.2763000503182411,
+      "ci95": [
+        0.1787709215082801,
+        0.3828798655563822
+      ],
+      "group": "random",
+      "donor_pool": "all",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L23N809+",
+        "L02N5785-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L04N3936+"
+      ],
+      "mean_matched": 0.5981038602498862,
+      "mean_mismatched": 0.32180380993164504
+    },
+    "random_donors_only": {
+      "n_neurons": 8,
+      "n_poles": 8,
+      "mean": 0.26814340613782406,
+      "ci95": [
+        0.15901970411650837,
+        0.3831924758851528
+      ],
+      "group": "random",
+      "donor_pool": "random",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L21N8785+",
+        "L23N809+",
+        "L02N5785-",
+        "L14N5412-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L12N1642+",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L17N4727-",
+        "L04N3936+",
+        "L18N703+"
+      ],
+      "mean_matched": 0.5923490673303604,
+      "mean_mismatched": 0.32420566119253635
+    },
+    "same_sign_donors": {
+      "n_neurons": 5,
+      "n_poles": 5,
+      "mean": 0.33059714511036875,
+      "ci95": [
+        0.17091479897499084,
+        0.5453376077115536
+      ],
+      "group": "random",
+      "donor_pool": "all",
+      "match_sign": true,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L21N8785+",
+        "L23N809+",
+        "L02N5785-",
+        "L28N6373+",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L26N9711-",
+        "L20N5782-",
+        "L28N4478-",
+        "L07N8340-",
+        "L15N474+",
+        "L07N8409+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L17N4727-",
+        "L04N3936+",
+        "L26N9188+"
+      ],
+      "mean_matched": 0.488872754573822,
+      "mean_mismatched": 0.1582756094634533
+    },
+    "all_poles": {
+      "n_neurons": 26,
+      "n_poles": 26,
+      "mean": 0.25078031048178673,
+      "ci95": [
+        0.17796413329644845,
+        0.3258250508242502
+      ],
+      "group": "all",
+      "donor_pool": "all",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L03N6372+",
+        "L06N7759+",
+        "L09N10681+",
+        "L23N809-",
+        "L23N809+",
+        "L02N5785-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L04N3936+"
+      ],
+      "mean_matched": 0.5671985756892425,
+      "mean_mismatched": 0.3164182652074557
+    },
+    "activation_weighted": {
+      "n_neurons": 13,
+      "n_poles": 13,
+      "mean": 0.28356007659232174,
+      "ci95": [
+        0.1871797305360706,
+        0.38960346936786283
+      ],
+      "group": "random",
+      "donor_pool": "all",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L23N809+",
+        "L02N5785-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L04N3936+"
+      ],
+      "mean_matched": 0.6004127210425623,
+      "mean_mismatched": 0.31685264445024053
+    },
+    "permutation_random_layer": {
+      "n_poles": 8,
+      "strata_sizes": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "matched_cosine": 0.5923490524291992,
+      "null_mean": 0.4582774043083191,
+      "null95": [
+        0.33471276238560677,
+        0.5818419679999352
+      ],
+      "p_one_sided": 0.0625,
+      "null_draws": 16,
+      "method": "exact conditional enumeration",
+      "match_sign": false,
+      "scope": "Conditional identity test within the published random subset; no new model seeds."
+    },
+    "permutation_random_layer_sign": {
+      "n_poles": 2,
+      "strata_sizes": [
+        2
+      ],
+      "matched_cosine": 0.3013365864753723,
+      "null_mean": 0.21858656406402588,
+      "null95": [
+        0.13997404277324677,
+        0.297199085354805
+      ],
+      "p_one_sided": 0.5,
+      "null_draws": 2,
+      "method": "exact conditional enumeration",
+      "match_sign": true,
+      "scope": "Conditional identity test within the published random subset; no new model seeds."
+    },
+    "prefix": {
+      "n_neurons": 13,
+      "n_poles": 13,
+      "mean": 0.27558324944514495,
+      "ci95": [
+        0.1812730215776425,
+        0.37890653193283536
+      ],
+      "group": "random",
+      "donor_pool": "all",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L23N809+",
+        "L02N5785-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L04N3936+"
+      ],
+      "mean_matched": 0.5950634869245383,
+      "mean_mismatched": 0.3194802374793933
+    },
+    "masked": {
+      "n_neurons": 13,
+      "n_poles": 13,
+      "mean": 0.12834142721616304,
+      "ci95": [
+        0.07649899778457787,
+        0.18350400500572644
+      ],
+      "group": "random",
+      "donor_pool": "all",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L23N809+",
+        "L02N5785-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L04N3936+"
+      ],
+      "mean_matched": 0.82987347474465,
+      "mean_mismatched": 0.701532047528487
+    },
+    "second_encoder": {
+      "n_neurons": 13,
+      "n_poles": 13,
+      "mean": 0.29133557700193846,
+      "ci95": [
+        0.1881054478769119,
+        0.3978199487695327
+      ],
+      "group": "random",
+      "donor_pool": "all",
+      "match_sign": false,
+      "checkpoint": 13,
+      "excluded_poles": [
+        "L23N809+",
+        "L02N5785-",
+        "L27N7794+",
+        "L22N8185+",
+        "L16N864+",
+        "L20N5782-",
+        "L15N474+",
+        "L13N8376-",
+        "L30N10031+",
+        "L08N179-",
+        "L04N3936+"
+      ],
+      "mean_matched": 0.6239962119322556,
+      "mean_mismatched": 0.3326606349303172
+    }
+  },
+  "random_late_summary": {
+    "semantic_to_final": {
+      "group": "random",
+      "step": 560000,
+      "checkpoint": 13,
+      "metric": "semantic_to_final",
+      "mean": 0.6523006210724512,
+      "lower": 0.5794288639600078,
+      "upper": 0.721656740643084,
+      "n_neurons": 24
+    },
+    "tfidf_to_final": {
+      "group": "random",
+      "step": 560000,
+      "checkpoint": 13,
+      "metric": "tfidf_to_final",
+      "mean": 0.3543253953004289,
+      "lower": 0.26963347091337553,
+      "upper": 0.44071116789255815,
+      "n_neurons": 24
+    },
+    "token_cosine_to_final": {
+      "group": "random",
+      "step": 560000,
+      "checkpoint": 13,
+      "metric": "token_cosine_to_final",
+      "mean": 0.37698864051304537,
+      "lower": 0.26336184204260277,
+      "upper": 0.498676380409542,
+      "n_neurons": 24
+    },
+    "context_jaccard_to_final": {
+      "group": "random",
+      "step": 560000,
+      "checkpoint": 13,
+      "metric": "context_jaccard_to_final",
+      "mean": 0.13295426511037167,
+      "lower": 0.08751875044886749,
+      "upper": 0.1833121268733824,
+      "n_neurons": 24
+    }
+  },
+  "random_late_minus_initial_cosine": {
+    "n_neurons": 24,
+    "n_poles": 24,
+    "mean": 0.3904690742492676,
+    "ci95": [
+      0.30967056304216384,
+      0.4676104314625263
+    ]
+  },
+  "parent_neuron_bootstrap": {
+    "unit": "neuron",
+    "n_units": 300,
+    "replicates": 10000,
+    "seed": 20261111,
+    "ci95": [
+      0.21284796255280297,
+      0.31895540210404283
+    ]
+  },
+  "fixed_example_zero_checkpoints": {
+    "beyond_chance_late": [
+      3,
+      4
+    ],
+    "at_chance": [],
+    "median_convention_sensitive": [
+      1,
+      5
+    ]
+  },
+  "limits": [
+    "41 selected poles, including 17 selected using final outcomes; random group excludes these poles.",
+    "One OLMo training run. Intervals resample observed neurons, not model training seeds.",
+    "Top-20, truncated contexts change across checkpoints; centroids describe selected text, not neural activation vectors.",
+    "Exact overlap uses within-pole exported context IDs; missing top-k activations are not zero-filled.",
+    "Primary same-layer donor pool includes selected late poles; random-donor and sign-matched sensitivities are reported.",
+    "All new hypotheses are exploratory. Encoder sensitivity tests are not independent replications."
+  ]
+}

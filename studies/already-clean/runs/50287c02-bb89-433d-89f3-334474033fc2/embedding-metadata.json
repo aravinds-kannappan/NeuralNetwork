@@ -1,0 +1,12 @@
+[
+  {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "variant": "deleted",
+    "unique_texts": 10363,
+    "dimensions": 384,
+    "max_seq_length": 256,
+    "weights": "uniform top-20 contexts, normalize each embedding then normalize the mean",
+    "npz_sha256": "bb166fcfe3df909ff723f3a6d1ff96cb9ca163fbfe3e51f6f34700acca12a834"
+  }
+]

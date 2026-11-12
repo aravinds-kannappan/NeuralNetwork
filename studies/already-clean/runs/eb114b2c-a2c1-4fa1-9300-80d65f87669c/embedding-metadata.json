@@ -1,0 +1,42 @@
+[
+  {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "variant": "full",
+    "unique_texts": 10363,
+    "dimensions": 384,
+    "max_seq_length": 256,
+    "weights": "uniform top-20 contexts, normalize each embedding then normalize the mean",
+    "npz_sha256": "abaa7648f7b346d785062ab832e28b144a4340334cbe2ce350d791ad24b61495"
+  },
+  {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "variant": "prefix",
+    "unique_texts": 10286,
+    "dimensions": 384,
+    "max_seq_length": 256,
+    "weights": "uniform top-20 contexts, normalize each embedding then normalize the mean",
+    "npz_sha256": "878434665542f16fe007cf3a82063890096df1e351efddb4bc2ec82b55a44a5d"
+  },
+  {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "variant": "masked",
+    "unique_texts": 10363,
+    "dimensions": 384,
+    "max_seq_length": 256,
+    "weights": "uniform top-20 contexts, normalize each embedding then normalize the mean",
+    "npz_sha256": "2be82a2c9a59729db63ef73f55e5a574f4a5f62469f62872a5e964f543f23a76"
+  },
+  {
+    "model": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+    "revision": "4ca70771034acceecb2e72475f72050fcdde4ddc",
+    "variant": "full",
+    "unique_texts": 10363,
+    "dimensions": 384,
+    "max_seq_length": 128,
+    "weights": "uniform top-20 contexts, normalize each embedding then normalize the mean",
+    "npz_sha256": "bff18012973db2c0aa947917b3a6524e8992fcec2a845f224c1dc74d393681a3"
+  }
+]

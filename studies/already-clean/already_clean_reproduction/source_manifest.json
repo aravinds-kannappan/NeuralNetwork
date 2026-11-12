@@ -1,0 +1,342 @@
+{
+  "repository": "https://github.com/abaybektursun/already-clean-audit",
+  "commit": "de979b861f26a4235e38d0a605952d8d94d6a8e9",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5c0a90797c61aae0eb740ebfb49cf3a93dd75b1bb9b5f96662b734c28be87219",
+      "bytes": 24589,
+      "lfs_pointer": null
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "bd3ecec466bc64077a815a1d6048c12660a4eefeda5856a0501ff497853ddf79",
+      "bytes": 240,
+      "lfs_pointer": null
+    },
+    {
+      "path": "SPEC_D1.md",
+      "sha256": "481d2c8aad9a2f316f4870d75f10353cf82df4ac03b7826e4baa22af018ee9c4",
+      "bytes": 97509,
+      "lfs_pointer": null
+    },
+    {
+      "path": "DATA_CONTRACT.md",
+      "sha256": "8bf0b07faeaff4319caf491a69737a05394977af5ecfee691056fafe2c7d9253",
+      "bytes": 31953,
+      "lfs_pointer": null
+    },
+    {
+      "path": "results/RESULTS.md",
+      "sha256": "d16fa5039d3bd640f7d05b795c1ad950f03f0a56f9a1bba4c19036b29de521cf",
+      "bytes": 24975,
+      "lfs_pointer": null
+    },
+    {
+      "path": "results/REGISTRY.md",
+      "sha256": "e7fd3f5a70e4e7b39950a5adb23ffdb407f6fc59c8c6c13decd8d9b8e4f61e23",
+      "bytes": 5784,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/reuse/results/primary/verdict.json",
+      "sha256": "01fa1ccb17ad7795b0d69207b7d9531bcb9e2658584a0eba885f3e569933fa6b",
+      "bytes": 767316,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/reuse/results/birth/verdict_birth.json",
+      "sha256": "5e16a6a5bbda3b4e8c58b10a2326bfd861200bdcbd3954be5c64888689984a73",
+      "bytes": 1035816,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/reuse/results/phase0/verdict_coherence.json",
+      "sha256": "5c763f081046b12a6f173fc496acf12a0a1e2d59f3ecea6ec818633c7d43343e",
+      "bytes": 73934,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/reuse/results/RESULTS.md",
+      "sha256": "e9e0b59ee582c2bb83d2d5a406c4ca5344f11e84afcc7077702f7e665110afd0",
+      "bytes": 107718,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/instruments/results/e1/verdict_e1.json",
+      "sha256": "88b988ac22d0481b5fe9aae198385a21934a57ed9cc54540e8941670452eb2b4",
+      "bytes": 147445,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/instruments/results/e6/verdict_e6c.json",
+      "sha256": "0ae18f6da8aa1b67c46556457bd6a95e75628ef55c283069f8948602ed9300f2",
+      "bytes": 48001,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/instruments/results/RESULTS.md",
+      "sha256": "ac92016fc312b0e161aa54861931bdd6efdb0da0a7530817594772f0523a55b1",
+      "bytes": 24597,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/m2/births.json",
+      "sha256": "fdca794bc98a78ecf7aa360cad33ca598b633830e2c9891f8dbb7ca73aaf45b7",
+      "bytes": 139668,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/n1/onsets/onsets.json",
+      "sha256": "bb7158e5b2ed7a37f2733e529bf395970491d864e07a1ce6cebff0684b870314",
+      "bytes": 327408,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/00_ASSETS.md",
+      "sha256": "501b84fa4b1c005b8cc3f8c6c478c90db8c29646b1c910b708f8de6ad118da4e",
+      "bytes": 33333,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/07_PICKS/N1_SPEC.md",
+      "sha256": "b1e3e6ca59f934a689292d43468f6093eec9025969c138a5e4112bac1fcb6349",
+      "bytes": 49369,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/one_job/data.js",
+      "sha256": "ebdd51786cd2649152a0fdb93d1b5fbb27cb652bda971353adbb85325d62e8f0",
+      "bytes": 1003605,
+      "lfs_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:ebdd51786cd2649152a0fdb93d1b5fbb27cb652bda971353adbb85325d62e8f0\nsize 1003605\n"
+    },
+    {
+      "path": "studies/already-clean/walkthrough/one_job/extract.py",
+      "sha256": "c9553665eb12d1718022325c67de452b50453a0ce4823f8a943193504a21fe88",
+      "bytes": 15740,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/one_job/README.md",
+      "sha256": "bf0bbe7083217734d9e2eded8846ad427266e61af991b90c7214fa4dce2ec876",
+      "bytes": 12113,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/judge/data.js",
+      "sha256": "bf022b16342f2eb66bf3b03b3c0c0b8288acc8902dbd8252aec62b31b7416e58",
+      "bytes": 761927,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/judge/extract.py",
+      "sha256": "d6578abdb8f057708083036d90b7f93fdb2ce1c1ba75e9bcdd4ffacee3b1f182",
+      "bytes": 24317,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/judge/README.md",
+      "sha256": "fc4df138381cb1c91b5e81fccfb26f8cf3c5f7ffca54cd7e51bfd09cad7a273e",
+      "bytes": 13432,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/births/data.js",
+      "sha256": "fade144e57b73fb3157d7a68754fa5e453183b9e2d78d499fb2ea8c93c006985",
+      "bytes": 35258,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/births/extract.py",
+      "sha256": "16b4e0692dbc7c57426510daaa3ad92c8e30abcb707d2cce60e948f16e9b4f4b",
+      "bytes": 21513,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/births/README.md",
+      "sha256": "d4038ab5b8d525d1b8a1ee70bf063c8565ed769f9ad44c7977202a6c4cb99039",
+      "bytes": 18847,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/groups/data.js",
+      "sha256": "b5be396ff6a4b5d23586dd34c82e2873480b0f9b8d17e43709c706d451e3317f",
+      "bytes": 504195,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/groups/extract.py",
+      "sha256": "98cced7cf28a64f1484be844f5542fc7bd89dfcf63088e0cfad52cc92775af29",
+      "bytes": 14524,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/groups/README.md",
+      "sha256": "f29f3e25c4f58f6b5b7944615fd2aafa7a49f28f8e0d6b890b67cd5c84460a92",
+      "bytes": 8781,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/m05/data.js",
+      "sha256": "4cd9052495629a142ec3e169a14e3aa3ce1e3170fbbda978c852a45c943967cf",
+      "bytes": 41270,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/m05/extract.py",
+      "sha256": "13f7723e1b439fd7d81befe4a6962a33377633ab10a355cf4d77863900e795e8",
+      "bytes": 9772,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/neuron_across_training/data.js",
+      "sha256": "3df48c264043926b5da3813e2d76aa385004652535f51b20d474185fcf7a4b1a",
+      "bytes": 2666255,
+      "lfs_pointer": "version https://git-lfs.github.com/spec/v1\noid sha256:3df48c264043926b5da3813e2d76aa385004652535f51b20d474185fcf7a4b1a\nsize 2666255\n"
+    },
+    {
+      "path": "studies/already-clean/walkthrough/neuron_across_training/extract.py",
+      "sha256": "082e37908e6487619e3c1c8bb5db8681f926afa99015585bebd03052f7689662",
+      "bytes": 11488,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/already-clean/walkthrough/neuron_across_training/README.md",
+      "sha256": "a9f277ca052bac84f555430004858b16d1c09540f458a69f75bd87b022c76cda",
+      "bytes": 7936,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/05_chance.py",
+      "sha256": "5147f750a4b627d371c2c305c74d1f11638522fd16c43827e09feecf72148597",
+      "bytes": 11862,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/06_examples.py",
+      "sha256": "42305c33765655b46cc6d938158a9da9fa94d46fd13d9d7ed9d7957535812760",
+      "bytes": 5836,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/02_births.py",
+      "sha256": "6fde9a3153e5ce333d7838e89d82ffa9b8a7ef09d8f05498ba5ed744b2dd5e98",
+      "bytes": 4091,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/03_compare.py",
+      "sha256": "c1b42cc0cf4740110d2e9c7c6f408a304bf67670c68091776c533c18fc579dae",
+      "bytes": 5472,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/01_load.py",
+      "sha256": "3e48740a01f67c98df848ef9cf3e5058f0b12c8a83cfbc2172c75b8f7be9a5ac",
+      "bytes": 4675,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/common.py",
+      "sha256": "59aff0608d4bf8bb3f63542d09c18a74d2e17c1d563e8c46d05277bb2d4da63d",
+      "bytes": 2719,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/04_b.py",
+      "sha256": "5363600f890be047be5016f6ad2dd00a3ced3edd93d840875cb3d3c02491eeec",
+      "bytes": 3452,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/07_like_for_like.py",
+      "sha256": "d94c5e43f93e308de7a02e3227137e1878b538216f503a21eaff41da1c3fe0e4",
+      "bytes": 4384,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/05_chance.json",
+      "sha256": "a639424ffd6c0a55e4f4385fe7d0f64d34f48e7f3bdaae1d372c02aa91ea81cb",
+      "bytes": 9006,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/arrays.pointer.json",
+      "sha256": "2c9c9327097956c0bd5ce6d21792e5b8edef06f034598f86bdf222691eebbeec",
+      "bytes": 7439,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/06_examples.json",
+      "sha256": "141414c1ecaa1b2e0a1ae51659b21183e8ab5b4f7d5c0f7f9a8e3adf9ea43c01",
+      "bytes": 10114,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/05_stdout.txt",
+      "sha256": "c00647974e97faa353634eeeb8eb1b346ee90c1bda37817c195c9e43a742d920",
+      "bytes": 6122,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/04_per_pole.csv",
+      "sha256": "14561975e10db25ffdbcfaea3ccc8d224b2229b171bc5c41bcd69e1309185e87",
+      "bytes": 12258,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/births_all.csv",
+      "sha256": "439b66118c4de13c5a4f2211a2e3de905268d3bcce0c35c4bd605e3dbe6f28b1",
+      "bytes": 143018,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/births.pointer.json",
+      "sha256": "9da6ad5ed8da9fe9c7261f1fc21ece3eef2daf3c9d8dcc509a0f36f9724f30d7",
+      "bytes": 255,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/05_per_cluster_R1t.csv",
+      "sha256": "1083132bedf0f4e1a675205c0e8314b4f016a88361718cd85b6f3f1517bc1532",
+      "bytes": 209774,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/02_counts.json",
+      "sha256": "83335d8559e4fcbd63c050fc96afd2be8c70817570027a8f871431ea419213cb",
+      "bytes": 1077,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/01_load_checks.json",
+      "sha256": "8431df17d3a954d85a4731c83b588751164cedf07353149055e0b95b3b7f14ce",
+      "bytes": 3813,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/03_compare.json",
+      "sha256": "f762e5def46a676e6d9a5261a5fcfef7c7f2c450ae1ce062535545ab1bea1a2e",
+      "bytes": 966,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/06_predictability.json",
+      "sha256": "18261231d6275f5a3bbb8fb293cc2fdb166ae3af83c5d29abd9349deaaadbc5e",
+      "bytes": 311,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/07_like_for_like.json",
+      "sha256": "e7bf1eeb9da4742b8d25d47334332acc3ae89c2ca9520fe8aea3ab0666473592",
+      "bytes": 718,
+      "lfs_pointer": null
+    },
+    {
+      "path": "studies/next/10_recount2/out/04_b.json",
+      "sha256": "29b3a4bc77bde24f26794d69378d9a0fd6148a4d0ca3f486678305d3cf511fb0",
+      "bytes": 664,
+      "lfs_pointer": null
+    }
+  ]
+}

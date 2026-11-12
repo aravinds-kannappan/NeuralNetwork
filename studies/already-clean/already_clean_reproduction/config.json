@@ -1,0 +1,15 @@
+{
+  "phase": "reproduction",
+  "seed": 20261111,
+  "bootstrap_replicates": 10000,
+  "permutations": 10000,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "second_embedding_model": "sentence-transformers/paraphrase-MiniLM-L3-v2",
+  "second_embedding_revision": "4ca70771034acceecb2e72475f72050fcdde4ddc",
+  "device": "cpu",
+  "torch_threads": 4,
+  "artifact_root": "./outputs",
+  "similarity_source_run": "eb114b2c-a2c1-4fa1-9300-80d65f87669c",
+  "donor_subsamples": 200
+}

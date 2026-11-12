@@ -9,3 +9,10 @@ outputs/
 .env
 .env.*
 !.env.example
+
+# Checkpoint-study build and local development files
+.pytest_cache/
+node_modules/
+studies/already-clean/outputs/
+studies/already-clean/already_clean_reproduction/upstream/
+studies/already-clean/already_clean_reproduction/scratch/

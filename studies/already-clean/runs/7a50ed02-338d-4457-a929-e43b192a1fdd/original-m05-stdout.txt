@@ -1,0 +1,14 @@
+studies/next/10_recount2/out/06_examples.json 141414c1ecaa1b2e0a1ae51659b21183e8ab5b4f7d5c0f7f9a8e3adf9ea43c01
+studies/next/00_ASSETS.md 501b84fa4b1c005b8cc3f8c6c478c90db8c29646b1c910b708f8de6ad118da4e
+CHECK median recomputed from the banked activations: largest difference from the banked median 0.0001000000000000445
+studies/next/10_recount2/out/births_all.csv 439b66118c4de13c5a4f2211a2e3de905268d3bcce0c35c4bd605e3dbe6f28b1
+studies/next/m2/births.json fdca794bc98a78ecf7aa360cad33ca598b633830e2c9891f8dbb7ca73aaf45b7
+CHECK median, largest |recomputed - banked| over the 16 snapshots: recomputed 0.0001 banked 0.0 (studies/next/10_recount2/out/06_examples.json beyond_chance_late.median_by_t) same
+CHECK birth: recomputed 12 banked 12 (studies/next/10_recount2/out/06_examples.json beyond_chance_late.birth_banked) same
+PLAN rule -> example.birth_snapshot = 12 (step 320,000)
+studies/next/n1/onsets/onsets.json bb7158e5b2ed7a37f2733e529bf395970491d864e07a1ce6cebff0684b870314
+studies/next/07_PICKS/N1_SPEC.md b1e3e6ca59f934a689292d43468f6093eec9025969c138a5e4112bac1fcb6349
+CHECK not concentrated: recomputed 93 banked 93 (studies/next/07_PICKS/N1_SPEC.md §0.6 item 2) same
+CHECK median r_pre: recomputed 0.838 banked 0.84 (studies/next/07_PICKS/N1_SPEC.md §0.6 item 2) same
+PLAN 93 of 153 -> gradual.dated_step_holds_less_rise_than_two_before.recomputed = 93; PLAN 0.84 -> gradual.median_ratio_one_snapshot_before.recomputed = 0.8375
+wrote studies/already-clean/walkthrough/m05/data.js: 41,270 bytes

@@ -206,6 +206,14 @@ def loss(pred,target):
     return F.mse_loss(pred[:,:4],target[:,:4])+.25*F.binary_cross_entropy_with_logits(pred[:,4],(target[:,4]>0).float())
 
 
+def substrate_hash(model):
+    h=hashlib.sha256()
+    for name,value in model.substrate.state_dict().items():
+        h.update(name.encode())
+        h.update(value.detach().cpu().contiguous().view(torch.uint8).numpy().tobytes())
+    return h.hexdigest()
+
+
 @torch.no_grad()
 def validation_loss(model,x,y,batch=128):
     model.eval();total=0.
@@ -236,7 +244,8 @@ def evaluate(model,mean,std,device,cfg,seed_start,n,condition,tag):
                     if begin==0 and s==0 and steps[s]%3==0:
                         traces[s].append({'step':steps[s],'cube':infos[s]['privileged/block_1_pos'].tolist(),
                                           'effector':infos[s]['proprio/effector_pos'].tolist(),
-                                          'target':targets[s].tolist(),'action':actions[j].tolist()})
+                                          'target':targets[s].tolist(),'action':actions[j].tolist(),
+                                          'qpos':infos[s]['qpos'].tolist()})
                     _,_,term,trunc,info=envs[s].step(actions[j])
                     steps[s]+=1;infos[s]=info;success=bool(info['success'])
                     if success or term or trunc or steps[s]>=cfg['eval_horizon']:
@@ -275,7 +284,7 @@ def run(cfg):
     out=Path('outputs');out.mkdir(exist_ok=True)
     torch.set_num_threads(cfg.get('cpu_threads',4))
     device=torch.device('mps' if torch.backends.mps.is_available() else 'cpu')
-    versions={k:importlib.metadata.version(k) for k in ['torch','numpy','ogbench','mujoco','safetensors']}
+    versions={k:importlib.metadata.version(k) for k in ['torch','numpy','ogbench','mujoco','safetensors','transformers']}
     metadata={'config':cfg,'run_id':os.environ.get('ORX_RUN_ID'),'commit':os.environ.get('ORX_COMMIT'),
               'device':str(device),'versions':versions,'python':platform.python_version()}
     emit('geometry_configuration',**metadata)
@@ -288,9 +297,10 @@ def run(cfg):
     experts=expert_evaluation(cfg)
     state=None;weight_meta=None
     if any(mode!='mlp' for mode in cfg['modes']):
-        from borrowed_recovery.gemma_weights import load_layer
+        from borrowed_recovery.gemma_weights import load_layer, verify_native
         state,weight_meta=load_layer(cfg['cache_root'])
         emit('pretrained_weights',**weight_meta)
+        weight_meta['native_equivalence']=verify_native(state,weight_meta,device)
     results=[];all_rows=[];all_curves=[]
     for seed in cfg['training_seeds']:
         for mode in cfg['modes']:
@@ -298,13 +308,15 @@ def run(cfg):
             began=time.monotonic()
             model=MLP(21) if mode=='mlp' else FrozenPolicy(21,state,mode,seed,torch.bfloat16)
             model=model.to(device)
+            original_substrate_hash=substrate_hash(model) if mode!='mlp' else None
             trainable=[p for p in model.parameters() if p.requires_grad]
             emit('model_started',mode=mode,training_seed=seed,trainable=sum(p.numel() for p in trainable),
                  frozen=sum(p.numel() for p in model.parameters() if not p.requires_grad))
             opt=torch.optim.AdamW(trainable,lr=cfg['learning_rate'],weight_decay=cfg['weight_decay'])
             sampler=np.random.default_rng(seed+620000)
             best_loss=float('inf');best_step=0;best=None;curve=[];fps={}
-            panel=vx[:128]
+            panel_indices=np.random.default_rng(76129).choice(len(vx),128,replace=False)
+            panel=vx[torch.as_tensor(panel_indices,device=device)]
             for step in range(cfg['train_steps']+1):
                 if step in cfg['checkpoints']:
                     val=validation_loss(model,vx,vy,cfg['batch_size'])
@@ -318,6 +330,9 @@ def run(cfg):
                         with torch.no_grad():
                             z,neu,pred=model.fingerprint(panel)
                             fps[str(step)]={'hidden':z.cpu().numpy(),'neurons':neu.cpu().numpy(),'actions':pred.cpu().numpy()}
+                        if step in (0,cfg['train_steps']):
+                            torch.save({k:v.detach().cpu() for k,v in model.state_dict().items() if not k.startswith('substrate.')},
+                                       out/f'adapter-{mode}-s{seed}-step{step}.pt')
                 if step==cfg['train_steps']:break
                 model.train()
                 idx=torch.as_tensor(sampler.integers(0,len(x),cfg['batch_size']),device=device)
@@ -331,7 +346,12 @@ def run(cfg):
             torch.save({'adapter':best,'mean':mean.cpu(),'std':std.cpu(),'mode':mode,'seed':seed,
                         'best_step':best_step,'config':cfg},out/f'policy-{tag}.pt')
             if fps:
-                np.savez_compressed(out/f'fingerprints-{tag}.npz',**{f'{s}_{kind}':value for s,d in fps.items() for kind,value in d.items()})
+                np.savez_compressed(out/f'fingerprints-{tag}.npz',panel_indices=panel_indices,
+                                    **{f'{s}_{kind}':value for s,d in fps.items() for kind,value in d.items()})
+                final_substrate_hash=substrate_hash(model)
+                assert original_substrate_hash==final_substrate_hash,'frozen parameters changed'
+                emit('frozen_hash_check',mode=mode,training_seed=seed,sha256=final_substrate_hash,unchanged=True,
+                     matrix_control_statistics=model.substrate.stats)
             per_condition=[]
             for condition,start in [('id',cfg['test_start']),('shift',cfg['shift_start'])]:
                 rows=evaluate(model,mean,std,device,cfg,start,cfg['test_episodes'],condition,tag)

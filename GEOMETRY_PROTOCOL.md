@@ -54,3 +54,15 @@ For frozen models record signed MLP activation vectors, hidden states and action
 predictions on the SAME 128 validation states at checkpoints. The substrate remains
 fixed; changes therefore arise from the learned interface and its inputs. Analyze
 geometry jointly with held-out control behavior. No scalar-neuron cosine is used.
+
+## Low-data comparison (fixed after baseline, before reading Gemma outcomes)
+The MLP baseline with 256 demos was near ceiling (39/40 ID and shifted successes).
+To create room for a data-efficiency effect, compare all four modes on 16 expert
+episodes, three training seeds (42,1337,2024), and 1000 optimizer steps. Evaluate
+60 untouched resets per condition, beginning at 30000/40000. Use the same 32
+validation demonstration episodes and predeclared checkpoint-loss selection rule.
+The 128 fixed-panel states are uniformly sampled without replacement from all
+validation transitions with seed76129. Save their indices. Verify the extracted
+block against the official Transformers implementation in BF16, and hash every
+frozen tensor before and after training. This is a prospectively fixed exploratory
+comparison, not a claim that the original offline-play IQL result is reproduced.

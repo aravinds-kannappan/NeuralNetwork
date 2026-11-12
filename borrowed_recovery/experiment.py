@@ -195,6 +195,9 @@ def summarize(rows, cfg):
 
 def main():
     cfg = json.loads(Path("config.json").read_text())
+    if cfg.get("experiment_family") == "geometry":
+        from borrowed_recovery.geometry import run
+        return run(cfg)
     out = Path("outputs")
     out.mkdir(exist_ok=True)
     versions = {p:importlib.metadata.version(p) for p in ["ogbench","mujoco","numpy","gymnasium"]}

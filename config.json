@@ -1,15 +1,38 @@
 {
-  "phase": "baseline",
+  "experiment_family": "geometry",
+  "phase": "learned_mlp_baseline",
   "environment": "cube-double-play-singletask-task1-v0",
-  "seeds": [0, 1, 2, 3],
-  "faults": ["none"],
-  "methods": ["single"],
-  "max_steps": 250,
-  "fault_start": 10,
-  "heartbeat_timeout": 5,
-  "stagnation_timeout": 40,
-  "freshness_ttl": 1,
-  "refresh_budget": 250,
-  "trace_seeds": [0, 1],
-  "verify_replay": true
+  "cache_root": "/Users/aravindkannappan/.local/share/openresearch/geometry-control-cache",
+  "train_start": 1000,
+  "train_demos": 256,
+  "validation_start": 2000,
+  "validation_demos": 32,
+  "data_horizon": 150,
+  "demonstration_noise": 0.08,
+  "training_seeds": [
+    42
+  ],
+  "modes": [
+    "mlp"
+  ],
+  "train_steps": 2000,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.0001,
+  "batch_size": 128,
+  "checkpoints": [
+    0,
+    100,
+    500,
+    1000,
+    1500,
+    2000
+  ],
+  "progress_interval": 250,
+  "test_start": 10000,
+  "shift_start": 20000,
+  "test_episodes": 40,
+  "expert_test_episodes": 20,
+  "eval_parallel": 8,
+  "eval_horizon": 150,
+  "cpu_threads": 4
 }

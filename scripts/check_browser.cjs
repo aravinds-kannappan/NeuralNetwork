@@ -50,6 +50,7 @@ const assert = require("node:assert/strict");
   assert.equal(await page.locator("#earlier-contexts li").count(), 20);
   await page.locator("#show-contexts").click();
   await page.locator("#explorer-panel").screenshot({ path: path.join(output, "desktop-explorer.png") });
+  await page.locator(".chart-frame").scrollIntoViewIfNeeded();
   const frame = page.frameLocator(".chart-frame iframe");
   await frame.locator("select").waitFor();
   const chartOptions = await frame.locator("select option").allTextContents();

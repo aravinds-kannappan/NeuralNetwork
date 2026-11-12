@@ -52,7 +52,7 @@ def rollout(env, cfg, seed, fault, method, trace=False):
     obs, info = env.reset(seed=seed, options={"render_goal": False})
     info, idx, target = target_for_oracle(env, info)
     initial_hash = hashlib.sha256(np.asarray(info["qpos"], dtype='<f8').tobytes()).hexdigest()
-    controllers = [CubeMarkovOracle(env), CubeMarkovOracle(env)]
+    controllers = [CubeMarkovOracle(env=env), CubeMarkovOracle(env=env)]
     for controller in controllers:
         np.random.seed(seed + 100000)
         controller.reset(obs, info)
